@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NavBar />
     <SongCard />
 
   </div>
@@ -8,10 +9,11 @@
 <script>
 
 import SongCard from './components/SongCard.vue'
+import NavBar from './components/NavBar.vue';
 export default {
   name: 'App',
   components: {
-
+    NavBar,
     SongCard
   }
 }
