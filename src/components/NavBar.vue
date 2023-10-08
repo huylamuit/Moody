@@ -23,8 +23,8 @@
             </ul>
         </div>
         <div class="navbar__configure">
-            <DefaultButton></DefaultButton>
-            <DefaultButton></DefaultButton>
+            <DefaultButton>Sign Up</DefaultButton>
+            <DefaultButton>Log In</DefaultButton>
         </div>
 
     </div>
@@ -43,10 +43,13 @@
 </script>
 
 <style>
+
 ul{
     list-style: none;
 }
+.navbar__menu{
 
+}
 .navabar__menu__lists {
     display: flex;
     flex-direction: row;
@@ -54,12 +57,22 @@ ul{
 }
 .navabar__menu__lists li{
     margin: 0 5px;
+    width: 120px;
+    gap: 2px;
+}
+.navbar__configure{
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    
 }
 .navbar{
         display : flex;
+        padding: 10px;
+        margin: 0 10px;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
 </style>
