@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style>
-
+    button{
+        width: 100px;
+        height: 35px;
+        border-radius: 10px;    
+    }
 
 </style>
