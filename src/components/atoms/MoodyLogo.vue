@@ -2,7 +2,6 @@
     <div class="logo-container">
         <img  class="logo" src="../../assets/logo.png" alt="Our logo">
     </div>
-
 </template>
 
 

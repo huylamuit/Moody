@@ -42,7 +42,8 @@ export default {
 .navbar{
   position: fixed;
   background-attachment: fixed;
-  background-color: aqua;
+  color: white;
+  background-color: #242e5a;
   top: 0;
   left: 0;
   right: 0;
