@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <NavBar class="navbar"/>
-    <HomePage />
-
-  </div>  
+  </div>
 </template>
 
 <script>
@@ -16,6 +13,7 @@ export default {
   components: {
     NavBar,
     HomePage
+
   }
 }
 </script>
@@ -33,6 +31,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 1000px;
+  background-color: rgb(36, 36, 36);
+  margin: 0;
+  padding: 0;
+  
 
 }
 
