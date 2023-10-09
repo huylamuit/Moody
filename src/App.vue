@@ -1,18 +1,20 @@
 <template>
   <div id="app">
+    <SongCard/>
+    <PlayBar/>
   </div>
 </template>
 
 <script>
 
-import NavBar from './components/NavBar.vue';
-import HomePage from './components/pages/HomePage.vue';
+import SongCard from './components/SongCard.vue';
+import PlayBar from './components/PlayBar.vue';
 
 export default {
   name: 'App',
   components: {
-    NavBar,
-    HomePage
+    SongCard,
+    PlayBar
 
   }
 }
