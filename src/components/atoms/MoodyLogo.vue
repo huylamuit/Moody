@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <img  class="logo" src="" alt="Our logo">
+    <div class="logo-container">
+        <img  class="logo" src="../../assets/logo.png" alt="Our logo">
     </div>
 
 </template>
@@ -13,5 +13,18 @@
     }
 
 </script>
+
+<style>
+    .logo-container{
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo{
+        width: 50px;
+        height: 50px;
+
+    }
+</style>
 
 

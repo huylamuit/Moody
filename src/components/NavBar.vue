@@ -40,6 +40,7 @@
             MoodyLogo
         }
     }
+    
 </script>
 
 <style>
@@ -68,11 +69,14 @@ ul{
 }
 .navbar{
         display : flex;
-        padding: 10px;
-        margin: 0 10px;
+        padding: 15px;
+        margin: 5px 10px;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        z-index: 999;
+        background-color: aqua;
+        
     }
 
 </style>
