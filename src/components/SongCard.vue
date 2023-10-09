@@ -37,21 +37,23 @@ export default {
 
 <style>
 .card{
-    height: 250px;
+    height: 280px;
     width:230px;
-
+    background-color: rgb(53, 53, 53);
     border-radius: 16px;
     padding: 8px;
     box-sizing: content-box;
+    color:white;
     
 }
 .card_header{
     background-color: blue;
     border-radius: 12px;
-    height: 100%;
-    width:100%;
+    height: 80%;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .card_image{    
@@ -75,7 +77,7 @@ export default {
     transform: translate(-50%,-50%);
     z-index: 99;
     display: none;
-    background-color:#222227;
+    background-color:#222222;
     border-radius: 5px;
     opacity: 0.8;
 }
