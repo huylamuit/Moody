@@ -552,9 +552,48 @@
       </div>
     </div>
     <div class="seventh-section">
-      <div class="seventh-section ">
-        
-      </div>
+        <footer class="footer">
+          <div class="container row">
+            <div class="footer-col">
+              <h4>Moody</h4>
+              <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Tính năng</a></li>
+                <li><a href="#">Đánh giá</a></li>
+                <li><a href="#">Giá</a></li>
+                <li><a href="#">Dùng thử</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Trợ giúp</h4>
+              <ul>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Hỗ trợ khách hàng</a></li>
+                <li><a href="#">Các gói khuyến mãi</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Tải ứng dụng</h4>
+              <ul>
+                <li><a href="#">Android</a></li>
+                <li><a href="#">iOS</a></li>
+                <li><a href="#">Window</a></li>
+                <li><a href="#">Tất cả phiên bản</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Theo dõi chúng tôi tại</h4>
+              <div class="social-links">
+                <a href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                 </a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </footer>
     </div>
         <div class="banner1"></div>
         <div class="banner2">
@@ -620,11 +659,13 @@
 </template>
 
 <script setup>
+
 /* 
  Jump to another section
 */
 /* 
 Slide step */
+
 let currentIndex = 0;
 
 function nextSlide() {
@@ -650,12 +691,13 @@ function updateSlider() {
 <style>
     .home{
         width: 100%;
-        height: 6000px;
+        min-height: 5246px;
         position: relative;
         overflow: hidden;
+        background-color: #76D5FD;
+       
     }
-
-    .first-section, .second-section,.third-section,.fourth-section,.fifth-section,.sixth-section{
+    .first-section, .second-section,.third-section,.fourth-section,.fifth-section,.sixth-section,.seventh-section{
         position: relative;
         display: flex;
         margin-top: 20px;
@@ -1020,6 +1062,95 @@ line-height: 120%; /* 48px */
 
 
     }
+
+    /* seventh - section */
+    .seventh-section{
+      bottom: 0;
+      padding: 0px;
+      top: 250px;
+      width: 100%;
+    }
+    .footer {
+      background-color: #76D5FD;
+      width: 100%;
+      padding: 80px 0;
+    }
+    
+    .container {
+      width: 100%;
+      margin: auto;
+    }
+    
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    ul {
+      list-style: none;
+    }
+    
+    .footer-col {
+      width: 25%;
+      padding: 0 15px;
+    }
+    
+    .footer-col h4 {
+      font-size: 18px;
+      color: #000000;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+    }
+    
+    .footer-col h4::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      background-color: #010101;
+      width: 50px;
+      height: 2px;
+    }
+    
+    .footer-col ul li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    
+    .footer-col ul li a {
+      color: #000000;
+      display: block;
+      font-size: 1rem;
+      font-weight: 300;
+      text-transform: capitalize;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-col ul li a:hover {
+      color: #FFF;
+      padding-left: 7px;
+    }
+    
+    .footer-col .social-links a {
+      color: #FFF;
+      background-color: rgba(255, 255, 255, 0.2);
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      text-align: center;
+      margin: 0 10px 10px 0;
+      line-height: 40px;
+      transition: all 0.5s ease;
+    }
+    
+    .footer-col .social-links a:hover {
+      color: #151515;
+      background-color: #FFF;
+    }
+   
+
     h1{
         color: #000;
     
@@ -1120,7 +1251,7 @@ line-height: 120%; /* 48px */
         margin-right: 20px;
         padding: 30px;
         box-sizing: border-box;
-        background-color: #6DADFA;
+        background-color: #74CAFD;
         display: flex;
         flex-direction: column;
       }
@@ -1207,4 +1338,5 @@ line-height: 120%; /* 48px */
           color: #666;
         }
       }
+
 </style>
