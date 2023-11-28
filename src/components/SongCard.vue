@@ -1,7 +1,7 @@
 <template>
-    <div class ="card">
-        <div class="card_header" @click="showAlert">
-            <div class="card_image">
+    <div class ="song-card">
+        <div class="song-card_header" @click="showAlert">
+            <div class="song-card_image">
                 <img :src="require('../assets/img/' + img)" alt="">
                 <a href="">
                     <div class="play_icon_cover">
@@ -15,7 +15,7 @@
             
            
         </div>
-        <div class="card_info">
+        <div class="song-card_info">
             <p id="song_name">{{ SongName }}</p>
             <p id="singer_name">{{ Singer }}</p>
         </div>
@@ -42,7 +42,7 @@ export default {
 </script>
 
 <style>
-.card{
+.song-card{
     height: 320px;
     width: 250px;
   
@@ -53,7 +53,7 @@ export default {
     color:white;
     
 }
-.card_header{
+.song-card_header{
 
     border-radius: 12px;
     height: 75%;
@@ -63,7 +63,7 @@ export default {
     margin-bottom: 10px;
 }
 
-.card_image{    
+.song-card_image{    
     position: relative;
 
     border-radius: 5px;
@@ -101,7 +101,7 @@ img{
 
 }
 
-.card:hover .card_image{
+.song-card:hover .song-card_image{
   transform: scale(1.2);
   filter: brightness(90%);
   cursor: pointer;
@@ -109,11 +109,11 @@ img{
 
 
 }
-.card:hover .play_icon_cover{
+.song-card:hover .play_icon_cover{
     display: block;
 
 }
-.card:hover{
+.song-card:hover{
     background-color: #242424;
 }
 p{

@@ -1,8 +1,6 @@
 <template>
   <div class="sidebar">
-      <div class="home">
-        as
-      </div>
+
     </div>
 </template>
 

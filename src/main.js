@@ -39,7 +39,7 @@ library.add(faMicrophone)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
-import App from './pages/App.vue'
+import App from './App.vue'
 import Album from './pages/Album.vue'
 import MusicApp from './pages/MusicApp.vue'
 const NotFound = { template: '<p>Không tìm thấy</p>' }
