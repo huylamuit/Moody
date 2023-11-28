@@ -15,26 +15,26 @@ export default {
     NavBar,
     HomePage,
   },
-  mounted() {
-    document.getElementById("danh-gia").addEventListener("click",function(){
-  document.getElementsByClassName("third-section")[0].scrollIntoView({behavior: 'smooth'});
-})
-document.getElementById("trang-chu").addEventListener("click",function(){
-  document.getElementsByClassName("first-section")[0].scrollIntoView({behavior: 'smooth'});
-})
-document.getElementById("tinh-nang").addEventListener("click",function(){
-  document.getElementsByClassName("second-section")[0].scrollIntoView({behavior: 'smooth'});
-})
-  },
+//   mounted() {
+//     document.getElementById("danh-gia").addEventListener("click",function(){
+//   document.getElementsByClassName("third-section")[0].scrollIntoView({behavior: 'smooth'});
+// })
+// document.getElementById("trang-chu").addEventListener("click",function(){
+//   document.getElementsByClassName("first-section")[0].scrollIntoView({behavior: 'smooth'});
+// })
+// document.getElementById("tinh-nang").addEventListener("click",function(){
+//   document.getElementsByClassName("second-section")[0].scrollIntoView({behavior: 'smooth'});
+// })
+//   },
 }
 
-window.addEventListener('wheel', function(event) {
-  if (event.deltaY < 0) {
-    document.querySelector('.navbar').classList.remove('hide');
-  } else {
-    document.querySelector('.navbar').classList.add('hide');
-  }
-});
+// window.addEventListener('wheel', function(event) {
+//   if (event.deltaY < 0) {
+//     document.querySelector('.navbar').classList.remove('hide');
+//   } else {
+//     document.querySelector('.navbar').classList.add('hide');
+//   }
+// });
 
 
 

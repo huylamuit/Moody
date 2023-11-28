@@ -180,14 +180,14 @@ function percentToSec(per){
     justify-content: center;
     justify-items: center;
 }
-button{
+.play_option button{
     width: 50px;
     height: 50px;
     background-color: black;
     border: none;
     margin: 0 15px 0 15px;
 }
-button:hover{
+.play_option button:hover{
     cursor: pointer;
 }
 .play_time{
