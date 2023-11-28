@@ -117,15 +117,6 @@
 
   }
 
-  .navbar{
-    position: fixed;
-    background-attachment: fixed;
-    background-color: aqua;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
   .content{
     width: 85%;
     overflow-y: auto;
