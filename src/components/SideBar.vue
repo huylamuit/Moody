@@ -1,12 +1,21 @@
 <template>
   <div class="sidebar">
-
-    </div>
+      <button @click="goBack" id="BackToHome">
+        Về trang giới thiệu
+      </button>
+  </div>
 </template>
 
 <script>
+
     export default {
-        name: 'SideBar'
+        name: 'SideBar',
+        methods:{
+          goBack(){
+            location.href='../'
+            console.log("hehe")
+          }
+        }
 
     }
 </script>

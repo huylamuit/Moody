@@ -111,9 +111,9 @@
     height: 100vh;
     background-color: black;
     margin: 0;
-    padding: 0;
+  
     display: flex;
-    
+   
 
   }
 
@@ -130,7 +130,7 @@
     position: relative;
     width: 97%;
     height: 500px;
-
+    color: white;
     margin:20px;
     border-radius: 10px ;
     overflow: hidden;
@@ -182,6 +182,7 @@
   h1{
     margin: 40px 0 20px 0;
     font-size: 32px;
+    color: white;
   }
   .content::-webkit-scrollbar {
     height: 80vh;
