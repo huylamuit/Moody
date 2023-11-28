@@ -1,6 +1,6 @@
 <template>
-    <div class="item">
-        <span>{{ id }}</span>
+    <div id="item">
+        <img :src="require('../../assets/img/' + img)" alt="">
         <div class="info">
             <a href="">{{ name }}</a>
             <a href="">{{ artist }}</a>
@@ -11,9 +11,10 @@
 </template>
 
 <script>
+
     export default {
         name: 'ListItem',
-        props:['id', 'name','artist','length']
+        props:['img', 'name','artist','length']
 
     }
 </script>
@@ -24,7 +25,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.item{
+#item{
     display:flex;
     flex-direction: row;
     justify-content: center;
@@ -34,7 +35,7 @@
     padding: 30px;
     border-radius: 5px;
 }
-.item:hover{
+#item:hover{
     background-color: rgba(43, 43, 43, 0.2);
 }
 .info{
@@ -42,7 +43,12 @@
     padding: 0;
 
 }
-.item a{
+#item img{
+    width:50px;
+    height: 50px;
+}
+
+#item a{
     text-decoration: none;
     display: block;
     text-align: left;

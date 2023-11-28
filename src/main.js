@@ -1,4 +1,7 @@
 import Vue from 'vue'
+import App from './App.vue'
+import Track from './pages/Track.vue'
+import MusicApp from './pages/MusicApp.vue'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
@@ -40,9 +43,7 @@ library.add(faMicrophone)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
-import App from './App.vue'
-import Track from './pages/Track.vue'
-import MusicApp from './pages/MusicApp.vue'
+
 const NotFound = { template: '<p>Không tìm thấy</p>' }
 const routes = {
   '/': App,

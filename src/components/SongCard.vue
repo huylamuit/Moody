@@ -1,5 +1,5 @@
 <template>
-    <div class ="card">
+    <div id ="card">
         <div class="card_header" @click="showAlert">
             <div class="card_image">
                 <img :src="require('../assets/img/' + img)" alt="">
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style>
-.card{
+#card{
     height: 320px;
     width: 250px;
     background-color: #161616;
@@ -101,7 +101,7 @@ export default {
 
 }
 
-.card:hover .card_image{
+#card:hover .card_image{
   transform: scale(1.2);
   filter: brightness(90%);
   cursor: pointer;
@@ -109,11 +109,11 @@ export default {
 
 
 }
-.card:hover .play_icon_cover{
+#card:hover .play_icon_cover{
     display: block;
 
 }
-.card:hover{
+#card:hover{
     background-color: #242424;
 }
 p{
@@ -126,9 +126,15 @@ p{
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    display: block;
+    text-decoration: none;
+    color: white;
 }
 #singer_name{
     font-size: 14px;
+    display: block;
+    text-decoration: none;
+    color: white;
 }
 #song_name:hover{
     color:#6DADFA;

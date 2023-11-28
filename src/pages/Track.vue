@@ -60,8 +60,16 @@
                     <a href="/music-app/artist">Ngọt</a>
                 </div>
             </div>
+            <div class="suggest">
+                <h2 id="suggest_title">Đề Xuất</h2>
+                <SongList ></SongList>
+            </div>
+            <div class="suggest">
+                <h2 id="suggest_title">Nổi bật của Ngọt</h2>
+                <CardList></CardList>
+            </div>
         </div>
-        <PlayBar @play="play" :SongName="nowPlaying.SongName" :Singer="nowPlaying.Singer" :length="nowPlaying.length" :src="nowPlaying.src" :img="nowPlaying.img"/>
+        <PlayBar :SongName="nowPlaying.SongName" :Singer="nowPlaying.Singer" :length="nowPlaying.length" :src="nowPlaying.src" :img="nowPlaying.img"/>
     </div>
 </template>
 
@@ -69,15 +77,14 @@
 
 import SideBar from '@/components/SideBar.vue';
 import PlayBar from '@/components/PlayBar.vue';
+import SongList from '@/components/SongList.vue';
+import CardList from '@/components/CardList.vue';
 
 
     export default {
     name: 'trackSong',
-    comments: {
-        SideBar,
-        PlayBar
-    },
-    components: { SideBar, PlayBar },
+   
+    components: { SideBar, PlayBar,SongList, CardList},
     data(){
     return {
       nowPlaying:{
@@ -113,7 +120,7 @@ import PlayBar from '@/components/PlayBar.vue';
     font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  text-align: left;
   color: #2c3e50;
   height: 100vh;
   background-color: black;
@@ -152,6 +159,8 @@ import PlayBar from '@/components/PlayBar.vue';
 }
 .lyrics{
     font-size: 16px;
+    color: rgb(100, 100, 100);
+    line-height: 20px;
 }
 .artist{
     height: 150px;
@@ -181,7 +190,12 @@ import PlayBar from '@/components/PlayBar.vue';
     height: 100px;
     border-radius: 100px;
 }
-
+#suggest{
+    text-align: left;
+}
+#suggest_title{
+    margin: 20px;
+}
 
 
 
