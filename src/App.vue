@@ -54,12 +54,18 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 100vw;
+
   height: max-content;
   background-image: linear-gradient(to bottom right, #6DADFA,rgb(119, 218, 254));
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+
 }
+#app::-webkit-scrollbar:horizontal{
+        background: #000;
+        border-radius: 10px;
+        height: 10px;
+    }
 
 .navbar{
   position: fixed;

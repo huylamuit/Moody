@@ -1,5 +1,5 @@
 <template>
-    <div id="app">
+    <div id="music-app">
       <SideBar>
 
       </SideBar>
@@ -102,7 +102,7 @@
     padding: 0;
   }
 
-  #app {
+  #music-app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -183,7 +183,7 @@
     margin: 40px 0 20px 0;
     font-size: 32px;
   }
-  ::-webkit-scrollbar {
+  .content::-webkit-scrollbar {
     height: 80vh;
     width: 10px;
   }

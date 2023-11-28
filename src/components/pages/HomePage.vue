@@ -654,6 +654,7 @@ function updateSlider() {
         position: relative;
         overflow: hidden;
     }
+
     .first-section, .second-section,.third-section,.fourth-section,.fifth-section,.sixth-section{
         position: relative;
         display: flex;
