@@ -1,7 +1,7 @@
 <template>
-    <div class ="song-card">
-        <div class="song-card_header" @click="showAlert">
-            <div class="song-card_image">
+    <div class ="card">
+        <div class="card_header" @click="showAlert">
+            <div class="card_image">
                 <img :src="require('../assets/img/' + img)" alt="">
                 <a href="">
                     <div class="play_icon_cover">
@@ -15,9 +15,10 @@
             
            
         </div>
-        <div class="song-card_info">
-            <p id="song_name">{{ SongName }}</p>
-            <p id="singer_name">{{ Singer }}</p>
+        <div class="card_info">
+            <a href="/music-app/track" id="song_name">{{ SongName }}</a>
+            <a href="" id="singer_name">{{ Singer }}</a>
+
         </div>
        
           
@@ -42,10 +43,9 @@ export default {
 </script>
 
 <style>
-.song-card{
+.card{
     height: 320px;
     width: 250px;
-  
     background-color: #161616;
     border-radius: 16px;
     padding: 8px;
@@ -53,7 +53,7 @@ export default {
     color:white;
     
 }
-.song-card_header{
+.card_header{
 
     border-radius: 12px;
     height: 75%;
@@ -63,7 +63,7 @@ export default {
     margin-bottom: 10px;
 }
 
-.song-card_image{    
+.card_image{    
     position: relative;
 
     border-radius: 5px;
@@ -73,7 +73,7 @@ export default {
     transition: all ease-in-out .4s;
     z-index: 0;
 }
-img{
+.card_image img{
     width: 100%;
     height: 100%;
 }
@@ -101,7 +101,7 @@ img{
 
 }
 
-.song-card:hover .song-card_image{
+.card:hover .card_image{
   transform: scale(1.2);
   filter: brightness(90%);
   cursor: pointer;
@@ -109,11 +109,11 @@ img{
 
 
 }
-.song-card:hover .play_icon_cover{
+.card:hover .play_icon_cover{
     display: block;
 
 }
-.song-card:hover{
+.card:hover{
     background-color: #242424;
 }
 p{
