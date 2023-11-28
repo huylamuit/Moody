@@ -519,7 +519,6 @@
       </div>
       <div class="sixth-section_right">
         <h1>Liên hệ cộng tác</h1>
-        <hr/>
         <form action="" id="myForm">
           <div class="input-container">
             <label for="">
@@ -650,7 +649,7 @@ function updateSlider() {
 
 <style>
     .home{
-        width: 100vw;
+        width: 100%;
         height: 6000px;
         position: relative;
         overflow: hidden;
@@ -969,6 +968,7 @@ line-height: 120%; /* 48px */
     
     }
     .sixth-section_right{
+      width: 40%;
       margin-left: 70px;
       padding: 10px;
       text-align: left;
