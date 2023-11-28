@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './App.vue'
+
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -34,7 +34,24 @@ library.add(faMicrophone)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
-
+import App from './pages/App.vue'
+import Album from './pages/Album.vue'
+import MusicApp from './pages/MusicApp.vue'
+const NotFound = { template: '<p>Không tìm thấy</p>' }
+const routes = {
+  '/': App,
+  '/music-app':MusicApp,
+  '/music-app/album': Album
+}
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  el: '#app',
+  data: {
+    currentRoute: window.location.pathname
+  },
+  computed: {
+    ViewComponent () {
+      return routes[this.currentRoute] || NotFound
+    }
+  },
+  render (h) { return h(this.ViewComponent) }
+})  

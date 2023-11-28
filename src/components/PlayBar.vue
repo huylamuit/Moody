@@ -1,10 +1,10 @@
 <template>
     <div class="play_bar">
         <div class="song">
-            <img class="song_img" src="https://avatar-ex-swe.nixcdn.com/mv/2020/07/31/d/3/4/5/1596188925706_640.jpg" alt="">
+            <img class="song_img" :src="require('../assets/img/' + songProps.img)" alt="">
             <div class="song_info">
-                <p class="info"><strong>{{ song.SongName }}</strong></p>
-                <p class = "info">{{ song.Singer }}</p>
+                <p class="info"><strong>{{ songProps.SongName }}</strong></p>
+                <p class = "info">{{ songProps.Singer }}</p>
             </div>
         </div>
         <div class="play_content">
@@ -24,9 +24,9 @@
                 </button>
             </div>
             <div class="play_progress">
-                <span class = "play_time">{{ milSecToMin(time) }}</span>
-                <input type="range" :value="percent" name="" id="progress_bar">
-                <span class = "play_time">{{milSecToMin(song.length*1000)}}</span>
+                <span class = "play_time">{{ milSecToMin(currentTimeLabel) }}</span>
+                <input type="range" v-model = "percent" @change="move"  max = "100" min="0" :step="step" mname="" id="progress_bar" >
+                <span class = "play_time">{{milSecToMin(songProps.length*1000)}}</span>
             </div>
         </div>
         <div class="play_option">
@@ -44,26 +44,41 @@
 
 <script setup>
 
-import { ref } from 'vue'
-import NT from '../assets/audio/NT.mp3'
-
+import { ref, defineProps} from 'vue'
+import  songs  from '../assets/audio/NT.mp3'
 
 let isPlay = ref(false)
 let isMute = ref(false)
 let percent = ref(0)
 let volume = ref(60)
-let time = ref(0)
-const SongPlay = new Audio(NT)
-let song = ref({
-    SongName: "Nàng Thơ",
-    Singer: "Hoàng Dũng",
-    length:321,
-}) 
+let step = ref((1/songProps.length)*100)
+let currentTimeLabel = ref(0)
+const SongPlay = new Audio(songs)
+const songProps = defineProps({
+    SongName: String,
+    Singer: String,
+    length: Number,
+    src: String,
+    img: String,
+})
+console.log(songProps.img )
+
+
+
+function move(){
+  
+    percent.value = Number(percent.value)
+    
+    SongPlay.currentTime = Number(percentToSec(percent.value))
+    currentTimeLabel.value = Number(percentToSec(percent.value)) * 1000
+
+
+
+}
 function muteCheck(){
     volume.value == 0? isMute.value = true : isMute.value = false
     SongPlay.volume = volume.value / 100
-    console.log(volume.value)
-    console.log(isMute.value)
+
 }
 function mute(){
     isMute.value = !isMute.value
@@ -72,9 +87,11 @@ function mute(){
     else
         volume.value = 10
     SongPlay.volume = volume.value / 100
-    console.log(SongPlay.volume)
+
 }
 function playAndPause(){
+    
+
     isPlay.value = !isPlay.value;
 
     if (isPlay.value){
@@ -83,13 +100,15 @@ function playAndPause(){
     let timer = setInterval(play, 1000)
     function play(){
         if(isPlay.value && percent.value < 100){
-            percent.value += (1/song.value.length)*100
-            time.value += 1000
-            console.log(percent.value)
+            percent.value += (1/songProps.length)*100
+            currentTimeLabel.value += 1000
+            // console.log('Document ' + a);
+            // console.log('Document value: '+ a.value)
         }
         else {
             clearInterval(timer)
             SongPlay.pause()
+            
         }
      
     }
@@ -98,6 +117,9 @@ function milSecToMin(time){
     const minutes = Math.floor(time / 60000);
     const seconds = ((time % 60000) / 1000).toFixed(0);
     return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+}
+function percentToSec(per){
+    return per*songProps.length/100
 }
 
 </script>
@@ -108,7 +130,7 @@ function milSecToMin(time){
 
 .play_bar{
     display: flex;
-    background-color: #222222;
+    background-color: black;
 
     width: 100%;
     height: 90px;
@@ -161,9 +183,12 @@ function milSecToMin(time){
 button{
     width: 50px;
     height: 50px;
-    background-color: #222222;
+    background-color: black;
     border: none;
     margin: 0 15px 0 15px;
+}
+button:hover{
+    cursor: pointer;
 }
 .play_time{
     margin: 20px 10px 10px 10px;
