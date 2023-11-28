@@ -691,7 +691,7 @@ function updateSlider() {
 <style>
     .home{
         width: 100%;
-        min-height: 5246px;
+        min-height: 5346px;
         position: relative;
         overflow: hidden;
         background-color: #76D5FD;
@@ -713,7 +713,6 @@ function updateSlider() {
     h3{
         color: #000;
 
-font-family: Josefin Sans;
 font-size: 40px;
 font-style: normal;
 font-weight: 700;
@@ -820,7 +819,7 @@ line-height: 120%; /* 48px */
         transform: rotate(90deg);
         color: rgba(255, 255, 255, 0);
         text-decoration: dotted;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
         font-size: 36px;
         font-style: normal; 
         font-weight: 700;
@@ -836,7 +835,6 @@ line-height: 120%; /* 48px */
         transform: rotate(-90deg);
         color: rgba(255, 255, 255, 0);
         text-decoration: dotted;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 36px;
         font-style: normal; 
         font-weight: 700;
@@ -944,9 +942,17 @@ line-height: 120%; /* 48px */
     .pricing-option{
       width: 27%;
       background-color: white;
+      color:black;
       padding:30px;
       border-radius: 25px;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      transition: 0.5s;
+    }
+    .pricing-option:hover{
+      transform: translateY(-5px);
+    }
+    .pricing-option p{
+      color: black;
     }
     .payment .payment-duration{
       width: fit-content;
@@ -983,12 +989,21 @@ line-height: 120%; /* 48px */
       font-size: 18px;
       color: white;
       border-radius: 30px;
+      transition: 0.5s;
+      cursor: pointer;
+
+    }
+    .button-container button:hover{
+      background-color: white;
+      border: 1px solid black;
+      color: black;
     }
     .button-container p{
       margin-top: 20px;
       margin-bottom: 40px;
       font-size:12px;
       text-decoration: underline;
+      cursor: pointer;
     }
 
     /* sixth-section */
@@ -1074,6 +1089,7 @@ line-height: 120%; /* 48px */
       background-color: #76D5FD;
       width: 100%;
       padding: 80px 0;
+      height: 550px;
     }
     
     .container {
@@ -1151,11 +1167,9 @@ line-height: 120%; /* 48px */
     }
    
 
-    h1{
+    .first-section_left h1{
         color: #000;
-    
-        font-family: Josefin Sans;
-        font-size: 74px;
+        font-size: 68px;
         font-style: normal;
         font-weight: 700;
         line-height: 118%; /* 151.04px */
@@ -1200,7 +1214,6 @@ line-height: 120%; /* 48px */
     .sponsor-name{
         display: block;
         color: #FFF;
-        font-family: Libre Franklin;
         font-size: 64px;
         font-style: normal;
         margin-left: 10px;
