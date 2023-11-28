@@ -2,9 +2,12 @@
     <div class ="card">
         <div class="card_header" @click="showAlert">
             <div class="card_image">
-                <a href="https://www.facebook.com/">
+                <img :src="require('../assets/img/' + img)" alt="">
+                <a href="">
                     <div class="play_icon_cover">
-                    <svg class = "play_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="white"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+              
+                        <svg  @click="play($event)" class = "play_icon" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" fill="white"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                 
                 </div>
                 </a>
                
@@ -13,8 +16,8 @@
            
         </div>
         <div class="card_info">
-            <p id="song_name">Space Melody</p>
-            <p id="singer_name">VIZE & Alan Walker & Leony</p>
+            <p id="song_name">{{ SongName }}</p>
+            <p id="singer_name">{{ Singer }}</p>
         </div>
        
           
@@ -24,32 +27,36 @@
 <script>
 export default {
   name: 'SongCard',
+  props:['SongName','Singer','img'],
   methods: {
-    showAlert() {
-      alert("Something!");
+    play(){
+        event.preventDefault()
+        this.$emit('play',[this.SongName, this.Singer, this.img])
     }
 }
 
 }
 
 
+
 </script>
 
 <style>
 .card{
-    height: 280px;
-    width:230px;
-    background-color: rgb(53, 53, 53);
+    height: 320px;
+    width: 250px;
+  
+    background-color: #161616;
     border-radius: 16px;
     padding: 8px;
-    box-sizing: content-box;
+    box-sizing: border-box;
     color:white;
     
 }
 .card_header{
-    background-color: blue;
+
     border-radius: 12px;
-    height: 80%;
+    height: 75%;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -58,15 +65,17 @@ export default {
 
 .card_image{    
     position: relative;
-    background-color: blue;
+
     border-radius: 5px;
     height: 100%;
     width:100%;
-    background: url(https://source.unsplash.com/y3aP9oo9Pjc/500x500);
-    background-size: cover;
-    background-repeat: no-repeat;
+
     transition: all ease-in-out .4s;
     z-index: 0;
+}
+img{
+    width: 100%;
+    height: 100%;
 }
 .play_icon_cover{
     position: absolute;
@@ -104,6 +113,9 @@ export default {
     display: block;
 
 }
+.card:hover{
+    background-color: #242424;
+}
 p{
     text-align: left;
     margin:5px 0 ;
@@ -111,12 +123,15 @@ p{
     font-size: 12px;
 }
 #song_name{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
 }
+#singer_name{
+    font-size: 14px;
+}
 #song_name:hover{
-    color:rgb(60, 115, 218)
+    color:#6DADFA;
    
 }
 
