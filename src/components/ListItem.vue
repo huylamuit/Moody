@@ -27,17 +27,18 @@
 .item{
     display:flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     color: white;
-    height: 100px;
-    padding: 20px;
+    height: 70px;
+    padding: 30px;
     border-radius: 5px;
 }
 .item:hover{
     background-color: rgba(43, 43, 43, 0.2);
 }
 .info{
-    margin: 0;
+    margin: 0 50px;
     padding: 0;
 
 }
