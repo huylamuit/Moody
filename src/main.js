@@ -16,8 +16,10 @@ import { faVolumeHigh } from '@fortawesome/free-solid-svg-icons'
 import { faVolumeLow } from '@fortawesome/free-solid-svg-icons'
 import { faVolumeMute } from '@fortawesome/free-solid-svg-icons'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
+
 import { faList } from '@fortawesome/free-solid-svg-icons'
 import { faMicrophone } from '@fortawesome/free-solid-svg-icons'
+
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -28,8 +30,11 @@ library.add(faPlay)
 library.add(faVolumeHigh)
 library.add(faVolumeLow)
 library.add(faVolumeMute)
+
+
 library.add(faList)
 library.add(faMicrophone)
+
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

@@ -5,20 +5,20 @@
         </div>
         <div class="navbar__menu">
             <ul class="navabar__menu__lists">
-                <li>
-                    Home
+                <li id="trang-chu">
+                    Trang chủ
                 </li>
-                <li>
-                    About
+                <li id="tinh-nang">
+                    Tính năng
                 </li>
-                <li>
-                    Performer
+                <li id="danh-gia">
+                    Đánh giá
                 </li>
-                <li>
-                    Event Scheduler
+                <li id="gia">
+                    Giá
                 </li>
-                <li>
-                    Blog
+                <li id="lien-he">
+                    Liên hệ
                 </li>
             </ul>
         </div>
@@ -26,7 +26,6 @@
             <DefaultButton>Sign Up</DefaultButton>
             <DefaultButton>Log In</DefaultButton>
         </div>
-
     </div>
 </template>
 
@@ -40,7 +39,7 @@
             MoodyLogo
         }
     }
-    
+
 </script>
 
 <style>
