@@ -66,8 +66,8 @@
         nowPlaying:{
           SongName: 'Em Trang Trí',
           Singer: 'Ngọt',
-          length: 321,
-          src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\NT.mp3',
+          length: 208,
+          src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\ETT.mp3',
           img: 'gieo.jpg'
         },
         recent:[

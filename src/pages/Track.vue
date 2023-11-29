@@ -15,42 +15,8 @@
             <SongOption></SongOption>
            <div class="lyrics_contain">
                 <h2>Lời bài hát</h2>
-                <div class="lyrics">
-                    <p class = "lyrics">
-                        Đưa xuống một li <br>
-                        Sang trái một tí <br>
-                        Căn những tròn vuông <br>
-                        Sao cho vừa ý <br>
-                        Hai bước về sau <br>
-                        Nheo mắt vào xem <br>
-                        Tối thêm màu trắng <br>
-                        Sáng thêm màu kem <br>
-                        Đó là em <br>
-                        Và em lại trang trí căn nhà của chúng ta <br>
-                        Và em đi trang trí những xanh tươi cành lá <br>
-                        Và em lại trang trí cây thông chờ Giáng Sinh <br>
-                        Và em đi trang trí những thói quen của mình <br>
-                        <br>
-                        Quanh những bàn ghế <br>
-                        Em bắt đầu vẽ <br>
-                        Những trái tim nhỏ bé <br>
-                        Khiến chúng đẹp đẽ <br>
-                        Trang trí thật lâu <br>
-                        Buông xuống nghỉ ngơi <br>
-                        Tiếng đơn hàng tới đi cùng với đôi quần áo mới xinh <br>
-                        Và em lại trang trí căn nhà của chúng ta <br>
-                        Và em đi trang trí những xanh tươi cành lá <br>
-                        Và em lại trang trí cây thông chờ Giáng Sinh <br>
-                        Và em đi trang trí những thói quen của mình <br>
-                        Và em trang trí uh <br>
-                        <br>
-                        Và em lại trang trí uh <br>
-                        Còn ai trang trí căn nhà để sống vui <br>
-                        Mà không đi trang trí tóc tai hay mặt mũi <br>
-                        Còn ai trang trí cây thông chờ Giáng Sinh <br>
-                        Mà không đi trang trí những ước mơ <br>
-                        Trang trí những ước mơ của mình <br>
-                    </p>
+                <div class="lyrics" >
+                    <p v-for="(lyric,index) in nowPlaying.lyrics  " :key="index" id="" @click="emitTime(lyric.time)" :class="{ 'target': lyric.time <= currentTime }" >{{ lyric.text }}</p>
                 </div>
            </div>
            <div class="artist">
@@ -69,7 +35,7 @@
                 <CardList></CardList>
             </div>
         </div>
-        <PlayBar :SongName="nowPlaying.SongName" :Singer="nowPlaying.Singer" :length="nowPlaying.length" :src="nowPlaying.src" :img="nowPlaying.img"/>
+        <PlayBar></PlayBar>
     </div>
 </template>
 
@@ -80,12 +46,19 @@ import PlayBar from '@/components/PlayBar.vue';
 import SongList from '@/components/SongList.vue';
 import CardList from '@/components/CardList.vue';
 import SongOption from '@/components/mocules/SongOption.vue';
+import { EventBus } from '@/EventBus';
 
 
     export default {
     name: 'TrackPage',
    
     components: { SideBar, PlayBar,SongList, CardList, SongOption},
+    methods:{
+        emitTime(time){
+            EventBus.$emit('playTime',time)
+        }
+    },
+ 
     data(){
     return {
       nowPlaying:{
@@ -93,7 +66,45 @@ import SongOption from '@/components/mocules/SongOption.vue';
           Singer: 'Ngọt',
           length: 321,
           src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\NT.mp3',
-          img: 'gieo.jpg'
+          img: 'gieo.jpg',
+          lyrics: [
+            {text:'Đưa xuống một li', time:'24'},
+            {text:'Sang trái một tí', time:'27'},
+            {text:'Căn những tròn vuông', time:'29'},
+            {text:'Sao cho vừa ý', time:'32'},
+            {text:'Hai bước về sau', time:'34'},
+            {text:'Nheo mắt vào xem', time:'37'},
+            {text:'Tối thêm màu trắng', time:'39'},
+            {text:'Sáng thêm màu kem', time:'42'},
+            {text:'Đó là em', time:'44'},
+            {text:'Và em lại trang trí căn nhà của chúng ta', time:'46'},
+            {text:'Và em đi trang trí những xanh tươi cành lá', time:'51'},
+            {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'55'},
+            {text:'Và em đi trang trí những thói quen của mình', time:'60'},
+            {text:'[Nhạc]', time:'64'},
+            {text:'Quanh những bàn ghế', time:'83'},
+            {text:'Em bắt đầu vẽ', time:'86'},
+            {text:'Những trái tim nhỏ bé', time:'88'},
+            {text:'Khiến chúng đẹp đẽ', time:'91'},
+            {text:'Trang trí thật lâu', time:'93'},
+            {text:'Buông xuống nghỉ ngơi', time:'96'},
+            {text:'Tiếng đơn hàng tới đi cùng với đôi quần áo mới xinh', time:'98'},
+            {text:'Và em lại trang trí căn nhà của chúng ta', time:'104'},
+            {text:'Và em đi trang trí những xanh tươi cành lá', time:'109'},
+            {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'114'},
+            {text:'Và em đi trang trí những thói quen của mình', time:'119'},
+            {text:'Và em lại trang trí', time:'124'},
+            {text:'uh uh uh', time:'126'},
+            {text:'Và em lại trang trí', time:'134'},
+            {text:'uh uh uh', time:'136'},
+            {text:'Còn ai trang trí căn nhà để sống vui', time:'143'},
+            {text:'Mà không đi trang trí tóc tai hay mặt mũi', time:'149'},
+            {text:'Còn ai trang trí cây thông chờ Giáng Sinh', time:'153'},
+            {text:'Mà không đi trang trí những ước mơ', time:'158'},
+            {text:'Trang trí những ước mơ của mình', time:'162'},
+            {text:'[...]', time:'128'},
+          ],
+          currentTime:0
       },
       recent:[
         {SongName: 'Đánh Đổi', Singer: 'Obito, MCK', img: 'danhdoi.jpg'},
@@ -107,7 +118,15 @@ import SongOption from '@/components/mocules/SongOption.vue';
 
 
     }
-  },
+    },
+    created(){
+        EventBus.$on('time-update',(data)=>{
+            this.nowPlaying.currentTime = data
+            console.log(this.nowPlaying.currentTime)
+     
+        })
+    },
+   
 }
 </script>
 
@@ -165,16 +184,7 @@ import SongOption from '@/components/mocules/SongOption.vue';
    
 }
 
-.lyrics_contain{
-    padding: 20px;
-    text-align: left;
-   
-}
-.lyrics{
-    font-size: 16px;
-    color: rgb(100, 100, 100);
-    line-height: 20px;
-}
+
 .artist{
     height: 150px;
     display: flex;
@@ -202,6 +212,37 @@ import SongOption from '@/components/mocules/SongOption.vue';
     width: 100px;
     height: 100px;
     border-radius: 100px;
+}
+.lyrics_contain{
+    padding: 20px;
+    text-align: left;
+   
+}
+.lyrics{
+    background-color: orange;
+    height: 600px;
+    border-radius: 10px;
+    overflow: auto;
+    margin: 20px 0;
+}
+.lyrics p{
+    font-size: 24px;
+    color: rgba(39, 39, 39, 0.5);
+    line-height: 0.5;
+    font-weight: 800;
+    padding:20px;
+    border-radius: 10px;
+}
+.lyrics p:hover{
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+
+.lyrics .target{
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
 }
 #suggest{
     text-align: left;
