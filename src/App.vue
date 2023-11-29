@@ -15,26 +15,37 @@ export default {
     NavBar,
     HomePage,
   },
-//   mounted() {
-//     document.getElementById("danh-gia").addEventListener("click",function(){
-//   document.getElementsByClassName("third-section")[0].scrollIntoView({behavior: 'smooth'});
-// })
-// document.getElementById("trang-chu").addEventListener("click",function(){
-//   document.getElementsByClassName("first-section")[0].scrollIntoView({behavior: 'smooth'});
-// })
-// document.getElementById("tinh-nang").addEventListener("click",function(){
-//   document.getElementsByClassName("second-section")[0].scrollIntoView({behavior: 'smooth'});
-// })
-//   },
+   mounted() {
+    const currentUrl = window.location.href;
+    console.log(currentUrl);
+    if(currentUrl == "http://localhost:8080/"){
+      document.getElementById("danh-gia").addEventListener("click",function(){
+   document.getElementsByClassName("third-section")[0].scrollIntoView({behavior: 'smooth'});
+ })
+document.getElementById("trang-chu").addEventListener("click",function(){
+  document.getElementsByClassName("first-section")[0].scrollIntoView({behavior: 'smooth'});
+})
+document.getElementById("tinh-nang").addEventListener("click",function(){
+  document.getElementsByClassName("second-section")[0].scrollIntoView({behavior: 'smooth'});
+})
+  }
+    },
+     
 }
 
-// window.addEventListener('wheel', function(event) {
-//   if (event.deltaY < 0) {
-//     document.querySelector('.navbar').classList.remove('hide');
-//   } else {
-//     document.querySelector('.navbar').classList.add('hide');
-//   }
-// });
+const currentUrl = window.location.href;
+
+if(currentUrl == "http://localhost:8080/"){
+  window.addEventListener('wheel', function(event) {
+  if (event.deltaY < 0) {
+    document.querySelector('.navbar').style.top = '0';
+  } else {
+    document.querySelector('.navbar').style.top = '-80px';
+
+  }
+});
+}
+
 
 
 
@@ -75,13 +86,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  transition: top 0.3s;
-}
-
-@media (min-width: 992px) { 
-  .hide{
-      top: -90px;
-  }    
+  transition: 0.5s;
 }
 
 </style>
