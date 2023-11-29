@@ -89,11 +89,11 @@ import SongOption from '@/components/mocules/SongOption.vue';
     data(){
     return {
       nowPlaying:{
-        SongName: 'Nàng Thơ',
-        Singer: 'Hoàng Dũng',
-        length: 321,
-        src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\NT.mp3',
-        img: 'gieo.jpg'
+        SongName: 'Em Trang Trí',
+          Singer: 'Ngọt',
+          length: 321,
+          src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\NT.mp3',
+          img: 'gieo.jpg'
       },
       recent:[
         {SongName: 'Đánh Đổi', Singer: 'Obito, MCK', img: 'danhdoi.jpg'},
@@ -121,11 +121,12 @@ import SongOption from '@/components/mocules/SongOption.vue';
     font-family: Nunito;
     src: url('../assets/font/Nunito-VariableFont_wght.ttf');
 }
+
 #track{
     font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: left;
+    text-align: left;
   color: #2c3e50;
   height: 100vh;
   background-color: black;

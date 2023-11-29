@@ -38,5 +38,6 @@ import SongCard from './mocules/SongCard.vue';
 
     display: flex;
     flex-wrap: wrap;
+
 }
 </style>

@@ -27,6 +27,8 @@ import { faMicrophone } from '@fortawesome/free-solid-svg-icons'
 
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -38,6 +40,7 @@ library.add(faVolumeHigh)
 library.add(faVolumeLow)
 library.add(faVolumeMute)
 library.add(faHeart)
+library.add(faMagnifyingGlass)
 
 library.add(faList)
 library.add(faMicrophone)

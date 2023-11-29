@@ -52,6 +52,7 @@ export default {
     box-sizing: border-box;
     color:white;
     margin:10px;
+    text-align: left;
 
     
 }

@@ -1,5 +1,5 @@
 <template>
-    <div class="play_bar">
+    <div id="play_bar">
         <div class="song">
             <img class="song_img" :src="require('../assets/img/' + songProps.img)" alt="">
             <div class="song_info">
@@ -128,10 +128,9 @@ function percentToSec(per){
 <style>
 
 
-.play_bar{
+#play_bar{
     display: flex;
     background-color: black;
-
     width: 100%;
     height: 90px;
     position:fixed;
@@ -141,13 +140,14 @@ function percentToSec(per){
     color:white;
     padding: 20px;
     align-items: center;
+    
 }
 .song{
 
     display: flex;
     align-items: center;
     width: 35%;
- 
+    text-align: left;
     justify-items: center;
 }
 .song_img{
@@ -160,8 +160,7 @@ function percentToSec(per){
 .song_info{
     display: block;
     margin: 5px;
-    
-
+    text-align: left;
 }
 .info{
     font-size: 14px;
@@ -186,6 +185,7 @@ function percentToSec(per){
     border:none;
 
 }
+
 .play_option button{
     width: 50px;
     height: 50px;
@@ -193,7 +193,7 @@ function percentToSec(per){
     border: none;
     margin: 0 15px 0 15px;
 }
-.play_option button:hover{
+.play_option,.play_button button:hover{
     cursor: pointer;
 }
 .play_time{
