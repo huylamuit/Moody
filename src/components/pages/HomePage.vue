@@ -131,7 +131,6 @@
                     </div>
                   </div>
                 </div>
-                <!-- Add more review-card divs as needed -->
                 <div class="review-card">
                   <div class="flex-profile">
                     <div class="heading-image">
@@ -441,73 +440,83 @@
           <div class="pricing-container">
             <div class="pricing-option">
               <div class="payment">
-                <p class="payment-duration">One-time payment</p>
-                <p class="payment-name">Mini</p>
+                <p class="payment-duration">Thanh toán một lần</p>
+                <p class="payment-name">Cơ bản</p>
                 <div class="payment-perday">
-                  <p>From 2,300đ/day</p>
-                  <p>1 account on mobile only</p>
+                  <p>Từ 2,300đ/ngày</p>
+                  <p>Chỉ 1 tài khoản trên thiết bị di động</p>
                 </div>
               </div>
               <hr>
               <div class="extension">
                 
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe nhạc không có quảng cáo trên thiết bị di động</p>
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Tải 30 bài hát trên 1 thiết bị di động</p>
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe nhóm</p>
               </div>
               <div class="button-container">
-                <button type="button" class="">Get started</button>
-                <p>Terms and conditions apply</p>
+                <button type="button" class="">Nâng cấp</button>
+                <p>Chính sách và điều khoản</p>
               </div>
             </div>
             <div class="pricing-option">
               <div class="payment">
-                <p class="payment-duration">One-time payment</p>
-                <p class="payment-name">Mini</p>
+                <p class="payment-duration-2">3 tháng với giá 59,000đ</p>
+                <p class="payment-duration">Thanh toán một lần</p>
+                <p class="payment-name">Cá nhân</p>
                 <div class="payment-perday">
-                  <p>From 2,300đ/day</p>
-                  <p>1 account on mobile only</p>
+                  <p>59,000₫/tháng sau thời gian ưu đãi</p>
+                  <p>1 tài khoản</p>
                 </div>
               </div>
               <hr>
               <div class="extension">
                 <p> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe nhạc không có quảng cáo</p>
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe mọi nơi - thậm chí ngoại tuyến</p>
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Phát các bài hát theo thứ tự bất kỳ</p>
               </div>
               <div class="button-container">
-                <button type="button" class="">Get started</button>
-                <p>Terms and conditions apply</p>
+                <button type="button" class="">Nâng cấp</button>
+                <p>Chính sách và điều khoản</p>
               </div>
             </div>
             <div class="pricing-option">
               <div class="payment">
-                <p class="payment-duration">One-time payment</p>
-                <p class="payment-name">Mini</p>
+                <p class="payment-duration-2">
+                Miễn phí 1 tháng khi đăng ký
+
+                </p>
+
+                <p class="payment-duration">Thanh toán một lần</p>
+                <p class="payment-name">Học sinh</p>
                 <div class="payment-perday">
-                  <p>From 2,300đ/day</p>
-                  <p>1 account on mobile only</p>
+                  <p>29.500₫/tháng sau thời gian ưu đãi</p>
+                  <p>1 tài khoản</p>
                 </div>
 
               </div>
               <hr>
               <div class="extension">
                 <p> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Giảm giá đặc biệt cho sinh viên đủ điều kiện vào trường đại học</p>
+                  <p> <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe nhạc không có quảng cáo</p>
+                  <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
+                    <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe mọi nơi - thậm chí ngoại tuyến</p>
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Nghe nhạc không có quảng cáo</p>
                 <p><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512">
-                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Ad-free music listening on mobile</p>
+                  <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg> Phát các bài hát theo thứ tự bất kỳ</p>
               </div>
               <div class="button-container">
-                <button type="button" class="">Get started</button>
-                <p>Terms and conditions apply</p>
+                <button type="button" class="">Nâng cấp</button>
+                <p>Chính sách và điều khoản</p>
               </div>
             </div>
           </div>
@@ -707,6 +716,7 @@ function updateSlider() {
     }
     .first-section_left{
         margin-top: 30px;
+        margin-left: 30px;
         width: 50%;
         text-align: start;
     }
@@ -722,10 +732,11 @@ line-height: 120%;
 color: rgba(0, 0, 0, 0.53);
 
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 30px;
+font-size: 24px;
 font-style: normal;
-font-weight: 700;
-line-height: 120%; /* 48px */
+font-weight: 500;
+width: 70%;
+line-height: 100%; /* 48px */
     }
     .download{
         display:flex;
@@ -900,9 +911,9 @@ line-height: 120%; /* 48px */
       justify-content: space-between;
     }
     .feature-container_detail{
+      margin-bottom: 15px;
       height: 220px;
-      padding: 20px;
-      margin: 5px 15px;
+      padding: 50px;
       background-color: blue;
       border-radius: 30px;
       text-align: start;
@@ -922,13 +933,15 @@ line-height: 120%; /* 48px */
     }
     .feature-content{
       color:white;
-      font-size : 24px;
+      font-size : 20px;
+      text-align: justify;
+      
     }
 
     /* fifth section */
     .fifth-section{
       position: relative;
-      top: 300px;
+      top: 250px;
       flex-direction: column;
     }
     .pricing-container{
@@ -936,6 +949,7 @@ line-height: 120%; /* 48px */
       text-align: start;
       align-items: center;
       justify-content: center;
+      height: max-content;
       gap: 2%;
       
     }
@@ -945,6 +959,7 @@ line-height: 120%; /* 48px */
       color:black;
       padding:30px;
       border-radius: 25px;
+      height: fit-content;
       box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
       transition: 0.5s;
     }
@@ -954,28 +969,53 @@ line-height: 120%; /* 48px */
     .pricing-option p{
       color: black;
     }
+    .payment {
+      height: 180px;
+    }
     .payment .payment-duration{
       width: fit-content;
       padding: 8px;
       font-weight: bold;
       border-radius: 5px;
-      color: blue;
-      border: 2px solid blue;
+      color: rgb(52, 93, 255);
+      border: 2px solid rgb(52, 93, 255);
+      font-size: 14px;
+    }
+    .payment .payment-duration-2{
+      width: fit-content;
+      padding: 8px;
+      font-weight: bold;
+      border-radius: 5px;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgb(52, 93, 255);
+      font-size: 14px;
+      margin-bottom: 10px;
+      background-color: rgb(52, 93, 255);
     }
     .payment .payment-name{
-      font-size: 25px;
-      font-weight: bold;
+      font-size: 20px;
+      font-weight: 750;
       margin: 10px 0;
     }
-    .payment .extension{
-      margin: 10px 0;
+    .extension{
+      height: 170px;
+      margin-bottom: 60px;
     }
     .payment .payment-perday{
+
       margin-bottom: 50px;
+    }
+    .payment-perday p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
     }
     .extension p{
       text-align: start;
       margin: 10px 0;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
     }
     .extension p svg{
       
@@ -991,6 +1031,7 @@ line-height: 120%; /* 48px */
       border-radius: 30px;
       transition: 0.5s;
       cursor: pointer;
+      
 
     }
     .button-container button:hover{
@@ -1011,6 +1052,7 @@ line-height: 120%; /* 48px */
       top: 300px;
       background-color: white;
       height: 100vh;
+      gap: 2em;
       display:flex;
       flex-direction: row;
       
@@ -1027,9 +1069,14 @@ line-height: 120%; /* 48px */
     }
     .sixth-section_right{
       width: 40%;
-      margin-left: 70px;
+      margin-left: 100px;
       padding: 10px;
       text-align: left;
+    }
+    .sixth-section_right h1 {
+      text-transform: uppercase;
+      font-size: 35px;
+      color: black;
     }
     .sixth-section_right button{
       width: 40%;
@@ -1039,8 +1086,16 @@ line-height: 120%; /* 48px */
       color: white;
       border-radius: 10px;
       margin-top: 30px;
+      font-size:18px;
+      padding: 10px;   
+      transition: 0.5s; 
+    }
+    .sixth-section_right button:hover{
+      color: black;
+      background-color: white;
+      border: 1px solid black;
+      cursor: pointer;
 
-      
     }
     .input-container{
       text-align: start;
@@ -1099,7 +1154,8 @@ line-height: 120%; /* 48px */
     
     .row {
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-evenly;
+      flex-basis: 1 1 1 2;
     }
     
     ul {
@@ -1107,16 +1163,15 @@ line-height: 120%; /* 48px */
     }
     
     .footer-col {
-      width: 25%;
-      padding: 0 15px;
+      width: 20%;
     }
     
     .footer-col h4 {
-      font-size: 18px;
+      font-size: 20px;
       color: #000000;
       text-transform: capitalize;
       margin-bottom: 35px;
-      font-weight: 500;
+      font-weight: 700;
       position: relative;
     }
     
@@ -1136,7 +1191,7 @@ line-height: 120%; /* 48px */
     .footer-col ul li a {
       color: #000000;
       display: block;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: 300;
       text-transform: capitalize;
       text-decoration: none;
@@ -1173,6 +1228,12 @@ line-height: 120%; /* 48px */
         font-style: normal;
         font-weight: 700;
         line-height: 118%; /* 151.04px */
+    }
+    .first-section_left h3{
+      font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 118%;
     }
     h3{
         margin-top: 20px;
@@ -1267,7 +1328,9 @@ line-height: 120%; /* 48px */
         background-color: #74CAFD;
         display: flex;
         flex-direction: column;
+        transition: 0.5s;
       }
+
       .heading .name-cus {
         font-size: 16px;
         font-weight: 500;

@@ -4,7 +4,7 @@
             <MoodyLogo />
         </div>
         <div class="navbar__menu">
-            <ul class="navabar__menu__lists">
+            <ul class="navbar__menu__lists">
                 <li id="trang-chu">
                     Trang chủ
                 </li>
@@ -23,8 +23,7 @@
             </ul>
         </div>
         <div class="navbar__configure">
-            <DefaultButton>Sign Up</DefaultButton>
-            <DefaultButton>Log In</DefaultButton>
+            <DefaultButton>Dùng thử</DefaultButton>
         </div>
     </div>
 </template>
@@ -47,18 +46,21 @@
 ul{
     list-style: none;
 }
-.navbar__menu{
 
-}
-.navabar__menu__lists {
+.navbar__menu__lists {
     display: flex;
     flex-direction: row;
 
 }
-.navabar__menu__lists li{
+.navbar__menu__lists li{
     margin: 0 5px;
     width: 120px;
     gap: 2px;
+    transition: 0.5s;
+}
+.navbar__menu__lists li:hover{
+    color:rgb(100, 168, 240);
+    cursor: pointer;
 }
 .navbar__configure{
     display: flex;
@@ -74,6 +76,22 @@ ul{
         justify-content: space-between;
         z-index: 999;
         
-    }
+}
+
+.navbar__configure button{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(71, 71, 238);
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.navbar__configure button:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+}
 
 </style>
