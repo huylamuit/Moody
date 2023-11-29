@@ -18,7 +18,7 @@
         <div class="second-section">
             <div class="first-section_left">
                 <h1>NGHE NHẠC MIỄN PHÍ</h1>
-                <p class="non-info">Tìm những bài hát yêu thích nhất, tận hưởng với hàng triệu người dùng trên toàn thế giới, ĐỪNG BỎ LỠ.</p>
+                <p class="non-info">Tìm những bài hát yêu thích nhất, tận hưởng với hàng triệu người dùng trên toàn thế giới.</p>
             </div>
             <div class="blur floating"></div>
             <div class="second-section_right">
@@ -704,6 +704,7 @@ function updateSlider() {
         position: relative;
         overflow: hidden;
         background-color: #76D5FD;
+
        
     }
     .first-section, .second-section,.third-section,.fourth-section,.fifth-section,.sixth-section,.seventh-section{
@@ -729,14 +730,13 @@ font-weight: 700;
 line-height: 120%;
     }
     .non-info{
-color: rgba(0, 0, 0, 0.53);
-
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-width: 70%;
-line-height: 100%; /* 48px */
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 0.9;
+        width: 70%;
+        line-height: 100%; /* 48px */
     }
     .download{
         display:flex;
@@ -775,25 +775,33 @@ line-height: 100%; /* 48px */
     .second-section{
         flex-direction: column;
         top: 400px;
+       
+     
     }
     .second-section_right{
         position: relative;
         display: flex;
         width: 100%;
-        height: 600px;
+        height: 800px;
         margin-top: 20px;
         justify-content: center;
         gap: 5em;
+  
+        padding-top:100px;
     }
     .second-section .blur2{
       top:10px;
       left:20%;
     }
+    
+ 
     .card img {
         width: 400px;
         height: 400px;
-        background-size: cover ;
+        object-fit: cover;
         border: 9px solid #6DADFA;
+        border-radius: 10px;
+        box-shadow: 10px 10px 50px rgba(0,0,0,0.5);
         
     }
     .card:nth-child(1){
@@ -874,6 +882,8 @@ line-height: 100%; /* 48px */
         top: 300px;
         height: 100vh;
         background-color: white;
+
+
     }
 
     /* slider css */
@@ -891,6 +901,7 @@ line-height: 100%; /* 48px */
         flex-direction: column;
         top: 200px;
         height: 100vh;
+     
     }
     .fourth-section .fourth-section_second{
       display:flex;
@@ -927,6 +938,7 @@ line-height: 100%; /* 48px */
     }
     .feature-container_detail:first-child{
       background-color: #3D70D3;
+      
     }
     .feature-container_detail:nth-child(2){
       background-color: #326098;
@@ -943,6 +955,7 @@ line-height: 100%; /* 48px */
       position: relative;
       top: 250px;
       flex-direction: column;
+
     }
     .pricing-container{
       display:flex;
@@ -991,6 +1004,7 @@ line-height: 100%; /* 48px */
       font-size: 14px;
       margin-bottom: 10px;
       background-color: rgb(52, 93, 255);
+      
     }
     .payment .payment-name{
       font-size: 20px;
@@ -1055,6 +1069,7 @@ line-height: 100%; /* 48px */
       gap: 2em;
       display:flex;
       flex-direction: row;
+      
       
     }
     .sixth-section_left{
@@ -1171,7 +1186,7 @@ line-height: 100%; /* 48px */
       color: #000000;
       text-transform: capitalize;
       margin-bottom: 35px;
-      font-weight: 700;
+      font-weight: 900;
       position: relative;
     }
     
@@ -1226,7 +1241,7 @@ line-height: 100%; /* 48px */
         color: #000;
         font-size: 68px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 800;
         line-height: 118%; /* 151.04px */
     }
     .first-section_left h3{
@@ -1256,6 +1271,7 @@ line-height: 100%; /* 48px */
         white-space: nowrap;
         overflow: hidden;
         box-sizing: border-box;
+        
     }
     .marquee div {
         width: 100%;
@@ -1329,6 +1345,7 @@ line-height: 100%; /* 48px */
         display: flex;
         flex-direction: column;
         transition: 0.5s;
+    
       }
 
       .heading .name-cus {
@@ -1398,6 +1415,7 @@ line-height: 100%; /* 48px */
         padding: 10px;
         outline: none;
         flex: 1 1 auto;
+
       }
 
       .prev {

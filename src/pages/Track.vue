@@ -117,8 +117,12 @@ import SongOption from '@/components/mocules/SongOption.vue';
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Nunito;
+    src: url('../assets/font/Nunito-VariableFont_wght.ttf');
+}
 #track{
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
