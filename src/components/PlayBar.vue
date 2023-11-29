@@ -9,7 +9,7 @@
         </div>
         <div class="play_content">
             <div class="play_button">
-                <button class="prev">
+                <button id="prev">
                     <font-awesome-icon :icon="['fas', 'backward-step']" size="xl" style="color: #ffffff;" />
                 </button>
           
@@ -19,7 +19,7 @@
                 <button v-else class="play" @click="playAndPause">
                     <font-awesome-icon :icon="['fas', 'play']" size="xl" style="color: #ffffff;" />
                 </button>
-                <button class="next">
+                <button id="next">
                     <font-awesome-icon :icon="['fas', 'forward-step']" size="xl" style="color: #ffffff;" />
                 </button>
             </div>
@@ -179,6 +179,12 @@ function percentToSec(per){
     display: flex;
     justify-content: center;
     justify-items: center;
+
+}
+.play_button button{
+    background-color: black;
+    border:none;
+
 }
 .play_option button{
     width: 50px;

@@ -9,7 +9,7 @@
 
 <script>
 
-import SongCard from './SongCard.vue';
+import SongCard from './mocules/SongCard.vue';
 
     export default{
         name: 'CardList',
@@ -23,6 +23,9 @@ import SongCard from './SongCard.vue';
                     {SongName: 'Trước Khi Em Tồn Tại', Singer: 'Thắng', img:'caidautien.jpg'},
                     {SongName: 'Tình Yêu Xanh Lá', Singer: 'Thịnh Suy', img:'tinhyeuxanhla.jpg'},
                     {SongName: 'Đông Kiếm Em', Singer: 'Vũ.', img: 'dongkiemem.jpg'},
+                  
+        
+                    
                 ]
             }
         }
@@ -32,8 +35,8 @@ import SongCard from './SongCard.vue';
 
 <style>
 #CardList{
-    padding:0 20px;
+
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 </style>

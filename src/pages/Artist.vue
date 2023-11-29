@@ -10,9 +10,7 @@
                 </div>
                 
             </div>
-            <div class="option">
-
-            </div>
+            
             <div class="list">
                 <h2>Phổ Biến</h2>
                 <SongList></SongList>
@@ -34,6 +32,7 @@
 import SideBar from '@/components/SideBar.vue';
 import SongList from '@/components/SongList.vue';
 import CardList from '@/components/CardList.vue';
+
     export default {
         name: 'ArtistPage',
         components:{SideBar,SongList, CardList}
@@ -45,6 +44,7 @@ import CardList from '@/components/CardList.vue';
 #artist{
     display: flex;
     color: white;
+    background-color: black;
 }
 .suggest{
     margin:20px;

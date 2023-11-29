@@ -2,7 +2,7 @@
     <div id ="card">
         <div class="card_header" @click="showAlert">
             <div class="card_image">
-                <img :src="require('../assets/img/' + img)" alt="">
+                <img :src="require('../../assets/img/' + img)" alt="">
                 <a href="">
                     <div class="play_icon_cover">
               
@@ -16,8 +16,8 @@
            
         </div>
         <div class="card_info">
-            <a href="/music-app/track" id="song_name">{{ SongName }}</a>
-            <a href="" id="singer_name">{{ Singer }}</a>
+            <a href="/music-app/track" class="song_name">{{ SongName }}</a>
+            <a href="" class="singer_name">{{ Singer }}</a>
 
         </div>
        
@@ -45,12 +45,14 @@ export default {
 <style>
 #card{
     height: 320px;
-    width: 250px;
+    width: 230px;
     background-color: #161616;
     border-radius: 16px;
     padding: 8px;
     box-sizing: border-box;
     color:white;
+    margin:10px;
+
     
 }
 .card_header{
@@ -122,7 +124,7 @@ p{
     padding:0;
     font-size: 12px;
 }
-#song_name{
+.song_name{
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
@@ -130,13 +132,13 @@ p{
     text-decoration: none;
     color: white;
 }
-#singer_name{
+.singer_name{
     font-size: 14px;
     display: block;
     text-decoration: none;
     color: white;
 }
-#song_name:hover{
+.song_name:hover{
     color:#6DADFA;
    
 }

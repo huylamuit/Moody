@@ -12,7 +12,7 @@
                     <p class = "Artist"><Strong>Ngọt</Strong></p>
                 </div>
             </div>
-           <div class="option"></div>
+            <SongOption></SongOption>
            <div class="lyrics_contain">
                 <h2>Lời bài hát</h2>
                 <div class="lyrics">
@@ -54,7 +54,7 @@
                 </div>
            </div>
            <div class="artist">
-                <img :src="require('../assets/img/' + 'gieo.jpg')" alt="" id="artist_avt">
+                <img :src="require('../assets/img/' + 'ngot.jpg')" alt="" id="artist_avt">
                 <div class="artist_info">
                     <p>Ban nhạc</p>
                     <a href="/music-app/artist">Ngọt</a>
@@ -79,12 +79,13 @@ import SideBar from '@/components/SideBar.vue';
 import PlayBar from '@/components/PlayBar.vue';
 import SongList from '@/components/SongList.vue';
 import CardList from '@/components/CardList.vue';
+import SongOption from '@/components/mocules/SongOption.vue';
 
 
     export default {
     name: 'TrackPage',
    
-    components: { SideBar, PlayBar,SongList, CardList},
+    components: { SideBar, PlayBar,SongList, CardList, SongOption},
     data(){
     return {
       nowPlaying:{
@@ -132,12 +133,12 @@ import CardList from '@/components/CardList.vue';
 
 .header{
     background-image: linear-gradient(to bottom, #ED213A,#93291E);
-    height: 500px;
+    height: 350px;
     display: flex;
     align-items: flex-end;
     color: white;
     font-size: 24px;
-    padding: 150px 20px;
+    padding: 20px 20px;
     z-index: -1;
 
 }
