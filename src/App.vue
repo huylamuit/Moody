@@ -18,7 +18,7 @@ export default {
    mounted() {
     const currentUrl = window.location.href;
     console.log(currentUrl);
-    if(currentUrl == "http://localhost:8080/"){
+    if(currentUrl == "http://localhost:8080/" || currentUrl == "http://localhost:8080"){
       document.getElementById("danh-gia").addEventListener("click",function(){
    document.getElementsByClassName("third-section")[0].scrollIntoView({behavior: 'smooth'});
  })
@@ -28,6 +28,13 @@ document.getElementById("trang-chu").addEventListener("click",function(){
 document.getElementById("tinh-nang").addEventListener("click",function(){
   document.getElementsByClassName("second-section")[0].scrollIntoView({behavior: 'smooth'});
 })
+document.getElementById("gia").addEventListener("click",function(){
+  document.getElementsByClassName("fifth-section")[0].scrollIntoView({behavior: 'smooth'});
+})
+document.getElementById("lien-he").addEventListener("click",function(){
+  document.getElementsByClassName("sixth-section")[0].scrollIntoView({behavior: 'smooth'});
+})
+
   }
     },
      
@@ -35,14 +42,14 @@ document.getElementById("tinh-nang").addEventListener("click",function(){
 
 const currentUrl = window.location.href;
 
-if(currentUrl == "http://localhost:8080/"){
+if(currentUrl == "http://localhost:8080/" || currentUrl == "http://localhost:8080"){
   window.addEventListener('wheel', function(event) {
-  if (event.deltaY < 0) {
+  if (event.deltaY <= 0) {
     document.querySelector('.navbar').style.top = '0';
   } else {
     document.querySelector('.navbar').style.top = '-80px';
-
   }
+
 });
 }
 
