@@ -2,34 +2,34 @@
     <div class="home">
         <div class="first-section">
             <div class="first-section_left">
-                <h1>TẬN HƯỞNG ÂM NHẠC BẤT TẬN</h1>
-                <p class="non-info">Bạn có thể dễ dàng nghe nhiều loại nhạc khác nhau, mọi lúc, mọi nơi.</p>
-                <h3>Tải ứng dụng ngay tại</h3>
-                <div class="download">
+                <h1 class="fadeFromLeft-animation">TẬN HƯỞNG ÂM NHẠC BẤT TẬN</h1>
+                <p class="non-info fadeFromLeft-animation">Bạn có thể dễ dàng nghe nhiều loại nhạc khác nhau, mọi lúc, mọi nơi.</p>
+                <h3 class="fadeFromLeft-animation">Tải ứng dụng ngay tại</h3>
+                <div class="download fadeFromLeft-animation">
                     <img class="download-icon" src="../../assets/app-store.png" alt="">
                     <img class="download-icon" src="../../assets/google-play-badge-logo-png-transparent.png" alt="">
                 </div>
             </div>
-            <div class="first-section_right">
+            <div class="first-section_right fadeFromRight-animation">
                 <img class="iphone floating" src="../../assets/iphone.png" alt="">
-                <div class="blur floating"></div>
+                <div class="blur"></div>
             </div>
         </div>
         <div class="second-section">
-            <div class="first-section_left">
+            <div class="first-section_left reveal">
                 <h1>NGHE NHẠC MIỄN PHÍ</h1>
-                <p class="non-info">Tìm những bài hát yêu thích nhất, tận hưởng với hàng triệu người dùng trên toàn thế giới.</p>
+                <p class="non-info">Tìm những bài hát yêu thích nhất, tận hưởng với hàng triệu người dùng trên toàn thế giới, ĐỪNG BỎ LỠ.</p>
             </div>
             <div class="blur floating"></div>
             <div class="second-section_right">
-                <div class="card">
-                    <img src="../../assets/lowg.jpg" alt="">
+                <div class="card reveal">
+                    <img src="../../assets/LowG.png" alt="">
                 </div>
-                <div class="card">
-                    <img src="../../assets/Mono.webp" alt="">
+                <div class="card reveal">
+                    <img src="../../assets/Ha-anh-tuan.png" alt="">
                 </div>
-                <div class="card">
-                    <img src="../../assets/hieuthuhai.jpg" alt="">
+                <div class="card reveal">
+                    <img src="../../assets/LowG.png" alt="">
                 </div>
             </div>
             <div class="blur2 floating" style=""></div>
@@ -38,7 +38,7 @@
         </div>
 
         <div class="fourth-section">
-            <div class="first-section_left">
+            <div class="first-section_left reveal">
                 <h1 style="width:80%">NGHE NHẠC <span style="color: #FFEAEA; -webkit-text-stroke: 1.5px rgb(0, 0, 0); /* width and color */">
                   KHÔNG GIỚI HẠN
                 </span>
@@ -46,16 +46,16 @@
             </div>
             <div class="fourth-section_second">
               <div style="display:flex;width: 70%;gap:20px;">
-                <div class="image-container">
+                <div class="image-container reveal">
                   <img src="../../assets/28ebf201bef269b8b8c0e8fe2d3d6c76.png" alt="">
                   
                 </div>
-                <div class="feature-container">
-                  <div class="feature-container_detail">
+                <div class="feature-container ">
+                  <div class="feature-container_detail reveal">
                     <p class="feature-title">Không quảng cáo</p>
                     <p class="feature-content">Cung cấp nền tảng nghe nhạc không quảng cáo</p>
                   </div>
-                  <div class="feature-container_detail">
+                  <div class="feature-container_detail reveal">
                     <p class="feature-title">1 triệu++ bài hát</p>
                     <p class="feature-content">Thỏa thích nghe những bài hát của các nghệ sĩ trên toàn thế giới</p>
                   </div>
@@ -66,10 +66,10 @@
         </div>
         <div class="third-section">
 
-          <div class="first-section_left">
+          <div class="first-section_left reveal">
               <h1>NGƯỜI DÙNG NÓI GÌ VỀ CHÚNG TÔI?</h1>
           </div>
-          <div class="slider-section">
+          <div class="slider-section reveal">
             <div class="slider-container">
               <div class="slider-content">
                 <div class="review-card">
@@ -431,13 +431,13 @@
 
       </div>
       <div class="fifth-section">
-        <div class="first-section_left">
+        <div class="first-section_left reveal">
             <h1>
               GIÁ
           </h1>
         </div>
         <div class="fifth-section_second">
-          <div class="pricing-container">
+          <div class="pricing-container reveal">
             <div class="pricing-option">
               <div class="payment">
                 <p class="payment-duration">Thanh toán một lần</p>
@@ -462,7 +462,7 @@
                 <p>Chính sách và điều khoản</p>
               </div>
             </div>
-            <div class="pricing-option">
+            <div class="pricing-option reveal">
               <div class="payment">
                 <p class="payment-duration-2">3 tháng với giá 59,000đ</p>
                 <p class="payment-duration">Thanh toán một lần</p>
@@ -486,7 +486,7 @@
                 <p>Chính sách và điều khoản</p>
               </div>
             </div>
-            <div class="pricing-option">
+            <div class="pricing-option reveal">
               <div class="payment">
                 <p class="payment-duration-2">
                 Miễn phí 1 tháng khi đăng ký
@@ -523,10 +523,10 @@
         </div>
     </div>
     <div class="sixth-section">
-      <div class="sixth-section_left">
+      <div class="sixth-section_left reveal">
         <img src="../../assets/vecteezy_man-listening-music_12487457.jpg" alt="">
       </div>
-      <div class="sixth-section_right">
+      <div class="sixth-section_right reveal">
         <h1>Liên hệ cộng tác</h1>
         <form action="" id="myForm">
           <div class="input-container">
@@ -695,6 +695,46 @@ function updateSlider() {
     -currentIndex * cardWidth
   }px)`;
 }
+
+
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 180;
+    if (elementTop < windowHeight - elementVisible) {
+    reveals[i].classList.add("active");
+      
+      if(reveals[i].classList.contains("first-section_left") || reveals[i].classList.contains("sixth-section_left")){
+      reveals[i].classList.add("fadeFromLeft-animation");
+      }
+    if(reveals[i].classList.contains("card") ||reveals[i].classList.contains("pricing-option") ){
+        reveals[i].classList.add("fadeInUp-animation");
+        
+      }
+      if(reveals[i].classList.contains("sixth-section_right")){
+        reveals[i].classList.add("fadeFromRight-animation");
+      }
+        
+    }
+
+  }
+}
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('fadeFromLeft-animation');
+      return;
+    }
+
+    entry.target.classList.remove('fadeFromLeft-animation');
+  });
+});
+const squares = document.querySelectorAll('.first-section_left');
+squares.forEach((element) => observer.observe(element));
+window.addEventListener("scroll", reveal);
+
 </script>
 
 <style>
@@ -704,7 +744,6 @@ function updateSlider() {
         position: relative;
         overflow: hidden;
         background-color: #76D5FD;
-
        
     }
     .first-section, .second-section,.third-section,.fourth-section,.fifth-section,.sixth-section,.seventh-section{
@@ -730,13 +769,14 @@ font-weight: 700;
 line-height: 120%;
     }
     .non-info{
-        color: rgba(0, 0, 0, 0.7);
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 0.9;
-        width: 70%;
-        line-height: 100%; /* 48px */
+color: rgba(0, 0, 0, 0.53);
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+width: 70%;
+line-height: 100%; /* 48px */
     }
     .download{
         display:flex;
@@ -775,33 +815,25 @@ line-height: 120%;
     .second-section{
         flex-direction: column;
         top: 400px;
-       
-     
     }
     .second-section_right{
         position: relative;
         display: flex;
         width: 100%;
-        height: 800px;
+        height: 600px;
         margin-top: 20px;
         justify-content: center;
         gap: 5em;
-  
-        padding-top:100px;
     }
     .second-section .blur2{
       top:10px;
       left:20%;
     }
-    
- 
     .card img {
         width: 400px;
         height: 400px;
-        object-fit: cover;
+        background-size: cover ;
         border: 9px solid #6DADFA;
-        border-radius: 10px;
-        box-shadow: 10px 10px 50px rgba(0,0,0,0.5);
         
     }
     .card:nth-child(1){
@@ -868,9 +900,8 @@ line-height: 120%;
 
     .floating {  
         animation-name: floating;
-        animation-duration: 3s;
+        animation-duration: 4s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
         margin-left: 30px;
         margin-top: 5px;
     }
@@ -882,8 +913,6 @@ line-height: 120%;
         top: 300px;
         height: 100vh;
         background-color: white;
-
-
     }
 
     /* slider css */
@@ -901,7 +930,6 @@ line-height: 120%;
         flex-direction: column;
         top: 200px;
         height: 100vh;
-     
     }
     .fourth-section .fourth-section_second{
       display:flex;
@@ -938,7 +966,6 @@ line-height: 120%;
     }
     .feature-container_detail:first-child{
       background-color: #3D70D3;
-      
     }
     .feature-container_detail:nth-child(2){
       background-color: #326098;
@@ -955,7 +982,6 @@ line-height: 120%;
       position: relative;
       top: 250px;
       flex-direction: column;
-
     }
     .pricing-container{
       display:flex;
@@ -1004,7 +1030,6 @@ line-height: 120%;
       font-size: 14px;
       margin-bottom: 10px;
       background-color: rgb(52, 93, 255);
-      
     }
     .payment .payment-name{
       font-size: 20px;
@@ -1069,7 +1094,6 @@ line-height: 120%;
       gap: 2em;
       display:flex;
       flex-direction: row;
-      
       
     }
     .sixth-section_left{
@@ -1186,7 +1210,7 @@ line-height: 120%;
       color: #000000;
       text-transform: capitalize;
       margin-bottom: 35px;
-      font-weight: 900;
+      font-weight: 700;
       position: relative;
     }
     
@@ -1241,7 +1265,7 @@ line-height: 120%;
         color: #000;
         font-size: 68px;
         font-style: normal;
-        font-weight: 800;
+        font-weight: 700;
         line-height: 118%; /* 151.04px */
     }
     .first-section_left h3{
@@ -1271,7 +1295,6 @@ line-height: 120%;
         white-space: nowrap;
         overflow: hidden;
         box-sizing: border-box;
-        
     }
     .marquee div {
         width: 100%;
@@ -1345,7 +1368,6 @@ line-height: 120%;
         display: flex;
         flex-direction: column;
         transition: 0.5s;
-    
       }
 
       .heading .name-cus {
@@ -1415,7 +1437,6 @@ line-height: 120%;
         padding: 10px;
         outline: none;
         flex: 1 1 auto;
-
       }
 
       .prev {
@@ -1431,6 +1452,66 @@ line-height: 120%;
           line-height: 1.6;
           color: #666;
         }
+      }
+
+      /* animation fade in */
+      .reveal{
+        position: relative;
+        transform: translateY(0);
+        opacity: 0;
+        transition: 2s all ease;
+      }
+
+     
+      .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes fadeInFromLeft {
+        0% {
+          transform: translateX(-50%);
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+      }
+      .fadeFromLeft-animation {
+        animation-delay: 0.8s;
+        animation: 1.7s fadeInFromLeft;
+      }
+      @keyframes fadeInFromRight {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      .fadeFromRight-animation {
+        animation-delay: 0.8s;
+        animation: 1.7s fadeInFromRight;
+      }
+      .fadeInUp-animation {
+        animation-delay: 0.8s;
+        animation: 1.7s fadeInUp;
       }
 
 </style>
