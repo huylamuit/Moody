@@ -64,8 +64,8 @@
     data(){
       return {
         nowPlaying:{
-          SongName: 'Nàng Thơ',
-          Singer: 'Hoàng Dũng',
+          SongName: 'Em Trang Trí',
+          Singer: 'Ngọt',
           length: 321,
           src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\NT.mp3',
           img: 'gieo.jpg'
@@ -96,9 +96,13 @@
   </script>
 
   <style>
+  @font-face {
+    font-family: Nunito;
+    src: url('../assets/font/Nunito-VariableFont_wght.ttf');
+}
 
   #music-app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-family: Nunito;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;

@@ -1,7 +1,9 @@
 <template>
     <div id="artist">
+        
         <SideBar></SideBar>
         <div class="content">
+            <SearchBar></SearchBar>
             <div class="header">
                 <img :src="require('../assets/img/' + 'ngot.jpg')" alt="">
                 <div class="artist_info">
@@ -32,16 +34,22 @@
 import SideBar from '@/components/SideBar.vue';
 import SongList from '@/components/SongList.vue';
 import CardList from '@/components/CardList.vue';
+import SearchBar from '@/components/mocules/SearchBar.vue'
 
     export default {
         name: 'ArtistPage',
-        components:{SideBar,SongList, CardList}
+        components:{SideBar,SongList, CardList,SearchBar}
 
     }
 </script>
 
 <style>
+@font-face {
+    font-family: Nunito;
+    src: url('../assets/font/Nunito-VariableFont_wght.ttf');
+}
 #artist{
+    font-family: Nunito;
     display: flex;
     color: white;
     background-color: black;
