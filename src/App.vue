@@ -64,15 +64,18 @@ if(currentUrl == "http://localhost:8080/" || currentUrl == "http://localhost:808
   margin: 0;
   padding: 0;
 }
+@font-face {
+    font-family: Nunito;
+    src: url('./assets/font/Nunito-VariableFont_wght.ttf');
+}
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   width: 100vw;
-
   height: max-content;
   background-image: linear-gradient(to bottom right, #6DADFA,rgb(119, 218, 254));
   margin: 0;
