@@ -704,6 +704,8 @@ function reveal() {
     var elementTop = reveals[i].getBoundingClientRect().top;
     var elementVisible = 180;
     if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+
       if(reveals[i].classList.contains("first-section_left") || reveals[i].classList.contains("sixth-section_left")){
       reveals[i].classList.add("fadeFromLeft-animation");
       }
