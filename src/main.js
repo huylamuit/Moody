@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import Track from './pages/Track.vue'
 import MusicApp from './pages/MusicApp.vue'
+import Artist from './pages/Artist.vue'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
@@ -48,7 +49,8 @@ const NotFound = { template: '<p>Không tìm thấy</p>' }
 const routes = {
   '/': App,
   '/music-app':MusicApp,
-  '/music-app/track': Track
+  '/music-app/track': Track,
+  '/music-app/artist': Artist
 }
 new Vue({
   el: '#app',

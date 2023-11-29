@@ -82,7 +82,7 @@ import CardList from '@/components/CardList.vue';
 
 
     export default {
-    name: 'trackSong',
+    name: 'TrackPage',
    
     components: { SideBar, PlayBar,SongList, CardList},
     data(){
@@ -131,18 +131,20 @@ import CardList from '@/components/CardList.vue';
 }
 
 .header{
-    background-image: linear-gradient(to top, #141E30,#243B55);
-    height: 350px;
+    background-image: linear-gradient(to bottom, #ED213A,#93291E);
+    height: 500px;
     display: flex;
     align-items: flex-end;
     color: white;
     font-size: 24px;
-    padding: 20px 20px;
+    padding: 150px 20px;
+    z-index: -1;
 
 }
 .header img{
     width: 220px;
     height: 220px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.5);
     
 }
 .header .info{
@@ -153,9 +155,14 @@ import CardList from '@/components/CardList.vue';
     margin: 10px 0;
 }
 
+.option{
+   
+}
+
 .lyrics_contain{
     padding: 20px;
     text-align: left;
+   
 }
 .lyrics{
     font-size: 16px;

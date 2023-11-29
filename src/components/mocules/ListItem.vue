@@ -2,7 +2,7 @@
     <div id="item">
         <img :src="require('../../assets/img/' + img)" alt="">
         <div class="info">
-            <a href="">{{ name }}</a>
+            <a href=""><b>{{ name }}</b></a>
             <a href="">{{ artist }}</a>
         </div>
         <span class="end">{{ length }}</span>
@@ -53,8 +53,12 @@
     display: block;
     text-align: left;
     color: white;
+    font-size: 18px;
 }
 .end{
     margin-left: auto;
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
 }
 </style>

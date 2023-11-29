@@ -30,8 +30,8 @@ export default {
   name: 'SongCard',
   props:['SongName','Singer','img'],
   methods: {
-    play(){
-        event.preventDefault()
+    play($event){
+        $event.preventDefault()
         this.$emit('play',[this.SongName, this.Singer, this.img])
     }
 }
