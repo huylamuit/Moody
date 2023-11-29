@@ -1,23 +1,24 @@
 <template>
-    <div  v-if="isSearch == true" id="SearchBar">
+    <div id="SearchBar">
         <input type="text" name="" id="" placeholder="Bạn muốn nghe gì?">
     </div>
 </template>
 
 <script>
+
+import SideBar from '../SideBar.vue'
+
     export default {
         name: 'SearchBar',
+        comments: {
+            SideBar,
+        },
         data(){
             return{
-                isSearch: false
+           
             }
         },
-       mounted(){
-        this.emitter.on("toggleSearch", ()=>{
-            this.isSearch = !this.isSearch
-            console.log('haha')
-        })
-       }
+    
     }
 </script>
 
@@ -40,5 +41,6 @@
     border: solid white 1px;
     padding: 20px;
     font-weight:500;
+    color: white;
 }
 </style>

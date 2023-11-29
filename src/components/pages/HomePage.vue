@@ -23,13 +23,13 @@
             <div class="blur floating"></div>
             <div class="second-section_right">
                 <div class="card">
-                    <img src="../../assets/LowG.png" alt="">
+                    <img src="../../assets/lowg.jpg" alt="">
                 </div>
                 <div class="card">
-                    <img src="../../assets/Ha-anh-tuan.png" alt="">
+                    <img src="../../assets/Mono.webp" alt="">
                 </div>
                 <div class="card">
-                    <img src="../../assets/LowG.png" alt="">
+                    <img src="../../assets/hieuthuhai.jpg" alt="">
                 </div>
             </div>
             <div class="blur2 floating" style=""></div>
