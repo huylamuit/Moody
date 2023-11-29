@@ -49,7 +49,7 @@
   <script >
 
 
-  import SongCard from '../components/SongCard.vue';
+  import SongCard from '../components/mocules/SongCard.vue';
   import PlayBar from '../components/PlayBar.vue';
   import SideBar from '../components/SideBar.vue'
 
@@ -96,11 +96,6 @@
   </script>
 
   <style>
-  *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
 
   #music-app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

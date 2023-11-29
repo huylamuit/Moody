@@ -2,8 +2,8 @@
     <div id="item">
         <img :src="require('../../assets/img/' + img)" alt="">
         <div class="info">
-            <a href=""><b>{{ name }}</b></a>
-            <a href="">{{ artist }}</a>
+            <a href="/music-app/track" class="song_name"><b>{{ name }}</b></a>
+            <a href="/music-app/artist" class ="singer_name">{{ artist }}</a>
         </div>
         <span class="end">{{ length }}</span>
     </div>
@@ -53,7 +53,7 @@
     display: block;
     text-align: left;
     color: white;
-    font-size: 18px;
+
 }
 .end{
     margin-left: auto;
