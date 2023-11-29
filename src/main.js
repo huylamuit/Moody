@@ -3,6 +3,7 @@ import App from './App.vue'
 import Track from './pages/Track.vue'
 import MusicApp from './pages/MusicApp.vue'
 import Artist from './pages/Artist.vue'
+import Search from './pages/SearchPage.vue'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
@@ -29,6 +30,7 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
+import { faHome } from '@fortawesome/free-solid-svg-icons'
 
 /* add icons to the library */
 library.add(faUserSecret)
@@ -41,6 +43,7 @@ library.add(faVolumeLow)
 library.add(faVolumeMute)
 library.add(faHeart)
 library.add(faMagnifyingGlass)
+library.add(faHome)
 
 library.add(faList)
 library.add(faMicrophone)
@@ -55,7 +58,8 @@ const routes = {
   '/': App,
   '/music-app':MusicApp,
   '/music-app/track': Track,
-  '/music-app/artist': Artist
+  '/music-app/artist': Artist,
+  '/music-app/search': Search
 }
 new Vue({
   el: '#app',

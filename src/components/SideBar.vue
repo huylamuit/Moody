@@ -7,7 +7,7 @@
       </div>
       <div class="button">
         <font-awesome-icon :icon="['fas', 'magnifying-glass']" size="xs" />
-        <p class="option_title" @click="emitSearch($event)">Tìm kiếm</p>
+        <p class="option_title"><a href="/music-app/search">Tìm kiếm</a></p>
       </div>
     </div>
     <div class="lib">
@@ -23,7 +23,7 @@
         
       </div>
       <div class="button">
-        Về trang giới thiệu
+        <a href="/">Về trang giới thiệu</a>
       </div>
 
     </div>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-
+ 
     export default {
         name: 'SideBar',
         methods:{
@@ -41,11 +41,7 @@
             location.href='../'
             console.log("hehe")
           },
-          emitSearch($event){
-            $event.preventDefault()
-            this.emitter.emit('toggleSearch')
-            console.log("hehe")
-          }
+  
         }
 
     }
