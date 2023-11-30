@@ -83,10 +83,16 @@ import { EventBus } from '@/EventBus';
                 const remainingSeconds = Math.floor(seconds % 60);
                 return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
             },
+           
             emitCurrentTime(){
+                
                 setInterval(() => {
-                    EventBus.$emit('time-update', this.currentTime);
-                }, 1000);
+                    let minutes = Math.floor(this.currentTime / 60);
+                    let remainingSeconds = Math.floor(this.currentTime % 60);
+                    let data = minutes*60 + remainingSeconds 
+
+                    EventBus.$emit('time-update',data);
+                }, 1100);
             }
 
         },
