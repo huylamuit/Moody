@@ -13,19 +13,22 @@
                 </div>
             </div>
             <SongOption></SongOption>
-           <div class="lyrics_contain">
-                <h2>Lời bài hát</h2>
-                <div class="lyrics" >
-                    <p  v-for="(lyric,index) in nowPlaying.lyrics  " :key="index"  @click="emitTime(lyric.time)" :class="{ 'target': lyric.isPlayed }" ref="playing" >{{ lyric.text }}</p>
+            <div class="content_wrapper">
+                <div class="lyrics_contain">
+                    <h2>Lời bài hát</h2>
+                    <div class="lyrics" >
+                        <p  v-for="(lyric,index) in nowPlaying.lyrics  " :key="index"  @click="emitTime(lyric.time)" :class="{ 'target': lyric.isPlayed }" ref="playing" >{{ lyric.text }}</p>
+                    </div>
                 </div>
-           </div>
-           <div class="artist">
-                <img :src="require('../assets/img/' + 'ngot.jpg')" alt="" id="artist_avt">
-                <div class="artist_info">
-                    <p>Ban nhạc</p>
-                    <a href="/music-app/artist">Ngọt</a>
+                <div class="artist">
+                    <img :src="require('../assets/img/' + 'ngot.jpg')" alt="" id="artist_avt">
+                    <div class="artist_info">
+                        <p>Ban nhạc</p>
+                        <a href="/music-app/artist">Ngọt</a>
+                    </div>
                 </div>
             </div>
+           
             <div class="suggest">
                 <h2 id="suggest_title">Đề Xuất</h2>
                 <SongList ></SongList>
@@ -205,18 +208,18 @@ import { EventBus } from '@/EventBus';
     margin: 10px 0;
 }
 
-.option{
-   
-}
+
 
 
 .artist{
+    width: 30%;
     height: 150px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-
+    margin:20px;
     padding: 20px;
+    border-radius: 10px;
 }
 .artist_info{
     text-align: left;
@@ -238,9 +241,15 @@ import { EventBus } from '@/EventBus';
     height: 100px;
     border-radius: 100px;
 }
+.content_wrapper{
+
+    display: flex;
+}
 .lyrics_contain{
     padding: 20px;
     text-align: left;
+    width:50%;
+   
    
 }
 .lyrics_contain h2{
@@ -250,11 +259,25 @@ import { EventBus } from '@/EventBus';
 } 
 .lyrics{
     background-color: green;
-
+    height: 600px;
+    width: 100%;
     border-radius: 10px;
-
+    overflow: auto;
     margin: 20px 0;
 }
+.lyrics::-webkit-scrollbar {
+    height: 80vh;
+    width: 10px;
+  }
+.lyrics::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.5);
+  }
+.lyrics::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      border-right: none;
+      border-left: none;
+  }
+
 .lyrics p{
     font-size: 24px;
     color: rgba(39, 39, 39, 0.5);
@@ -270,7 +293,7 @@ import { EventBus } from '@/EventBus';
 }
 
 .lyrics .target{
-    font-size: 32px;
+    font-size: 28px;
     cursor: pointer;
     color: white;
 }
