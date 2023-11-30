@@ -18,18 +18,18 @@
         <div class="second-section">
             <div class="first-section_left reveal">
                 <h1>NGHE NHẠC MIỄN PHÍ</h1>
-                <p class="non-info">Tìm những bài hát yêu thích nhất, tận hưởng với hàng triệu người dùng trên toàn thế giới, ĐỪNG BỎ LỠ.</p>
+                <p class="non-info">Tìm những bài hát yêu thích nhất, tận hưởng với hàng triệu người dùng trên toàn thế giới.</p>
             </div>
             <div class="blur floating"></div>
             <div class="second-section_right">
                 <div class="card reveal">
-                    <img src="../../assets/LowG.png" alt="">
+                    <img src="../../assets/lowg.jpg" alt="">
                 </div>
                 <div class="card reveal">
-                    <img src="../../assets/Ha-anh-tuan.png" alt="">
+                    <img src="../../assets/Mono.webp" alt="">
                 </div>
                 <div class="card reveal">
-                    <img src="../../assets/LowG.png" alt="">
+                    <img src="../../assets/hieuthuhai.jpg" alt="">
                 </div>
             </div>
             <div class="blur2 floating" style=""></div>
@@ -769,14 +769,13 @@ font-weight: 700;
 line-height: 120%;
     }
     .non-info{
-color: rgba(0, 0, 0, 0.53);
-
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-width: 70%;
-line-height: 100%; /* 48px */
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 0.9;
+      width: 70%;
+      line-height: 100%; /* 48px */
     }
     .download{
         display:flex;
@@ -820,7 +819,7 @@ line-height: 100%; /* 48px */
         position: relative;
         display: flex;
         width: 100%;
-        height: 600px;
+        height: 800px;
         margin-top: 20px;
         justify-content: center;
         gap: 5em;
@@ -830,10 +829,12 @@ line-height: 100%; /* 48px */
       left:20%;
     }
     .card img {
-        width: 400px;
+width: 400px;
         height: 400px;
-        background-size: cover ;
+        object-fit: cover;
         border: 9px solid #6DADFA;
+        border-radius: 10px;
+        box-shadow: 10px 10px 50px rgba(0,0,0,0.5);
         
     }
     .card:nth-child(1){
@@ -1210,7 +1211,7 @@ line-height: 100%; /* 48px */
       color: #000000;
       text-transform: capitalize;
       margin-bottom: 35px;
-      font-weight: 700;
+      font-weight: 900;
       position: relative;
     }
     
@@ -1265,7 +1266,7 @@ line-height: 100%; /* 48px */
         color: #000;
         font-size: 68px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 800;
         line-height: 118%; /* 151.04px */
     }
     .first-section_left h3{
