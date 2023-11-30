@@ -243,6 +243,11 @@ import { EventBus } from '@/EventBus';
     text-align: left;
    
 }
+.lyrics_contain h2{
+    font-size: 28px;
+    font-weight: 800;
+   
+} 
 .lyrics{
     background-color: green;
 
