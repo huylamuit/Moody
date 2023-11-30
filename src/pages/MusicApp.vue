@@ -188,7 +188,7 @@
     width: 10px;
   }
   .content::-webkit-scrollbar-thumb {
-    background: #888;
+    background: rgba(92, 92, 92, 0.9);
   }
   .content::-webkit-scrollbar-thumb {
       border-radius: 5px;
