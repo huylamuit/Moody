@@ -16,7 +16,7 @@
            <div class="lyrics_contain">
                 <h2>Lời bài hát</h2>
                 <div class="lyrics" >
-                    <p v-for="(lyric,index) in nowPlaying.lyrics  " :key="index" id="" @click="emitTime(lyric.time)" :class="{ 'target': lyric.time <= currentTime }" >{{ lyric.text }}</p>
+                    <p  v-for="(lyric,index) in nowPlaying.lyrics  " :key="index"  @click="emitTime(lyric.time)" :class="{ 'target': lyric.isPlayed }" ref="playing" >{{ lyric.text }}</p>
                 </div>
            </div>
            <div class="artist">
@@ -55,9 +55,32 @@ import { EventBus } from '@/EventBus';
     components: { SideBar, PlayBar,SongList, CardList, SongOption},
     methods:{
         emitTime(time){
+            this.nowPlaying.currentTime = time
             EventBus.$emit('playTime',time)
-        }
+        },
+      
+        
     },
+    mounted(){
+        // Gọi hàm để xác định class
+        setInterval(()=>{
+            this.nowPlaying.lyrics.forEach(lyric=>{
+                console.log('lyric', lyric.time)
+                console.log('currentTime',this.nowPlaying.currentTime)
+                if(lyric.time <= this.nowPlaying.currentTime){
+                    lyric.isPlayed = true;
+                }
+                else{
+                    lyric.isPlayed = false;
+                }
+            })
+        },900)
+       
+
+        // Thêm class vào element sử dụng JavaScript
+   
+  },
+  
  
     data(){
     return {
@@ -68,41 +91,42 @@ import { EventBus } from '@/EventBus';
           src: 'C:\\Users\\ADMIN\\Desktop\\Moody\\src\\assets\\audio\\NT.mp3',
           img: 'gieo.jpg',
           lyrics: [
-            {text:'Đưa xuống một li', time:'24'},
-            {text:'Sang trái một tí', time:'27'},
-            {text:'Căn những tròn vuông', time:'29'},
-            {text:'Sao cho vừa ý', time:'32'},
-            {text:'Hai bước về sau', time:'34'},
-            {text:'Nheo mắt vào xem', time:'37'},
-            {text:'Tối thêm màu trắng', time:'39'},
-            {text:'Sáng thêm màu kem', time:'42'},
-            {text:'Đó là em', time:'44'},
-            {text:'Và em lại trang trí căn nhà của chúng ta', time:'46'},
-            {text:'Và em đi trang trí những xanh tươi cành lá', time:'51'},
-            {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'55'},
-            {text:'Và em đi trang trí những thói quen của mình', time:'60'},
-            {text:'[Nhạc]', time:'64'},
-            {text:'Quanh những bàn ghế', time:'83'},
-            {text:'Em bắt đầu vẽ', time:'86'},
-            {text:'Những trái tim nhỏ bé', time:'88'},
-            {text:'Khiến chúng đẹp đẽ', time:'91'},
-            {text:'Trang trí thật lâu', time:'93'},
-            {text:'Buông xuống nghỉ ngơi', time:'96'},
-            {text:'Tiếng đơn hàng tới đi cùng với đôi quần áo mới xinh', time:'98'},
-            {text:'Và em lại trang trí căn nhà của chúng ta', time:'104'},
-            {text:'Và em đi trang trí những xanh tươi cành lá', time:'109'},
-            {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'114'},
-            {text:'Và em đi trang trí những thói quen của mình', time:'119'},
-            {text:'Và em lại trang trí', time:'124'},
-            {text:'uh uh uh', time:'126'},
-            {text:'Và em lại trang trí', time:'134'},
-            {text:'uh uh uh', time:'136'},
-            {text:'Còn ai trang trí căn nhà để sống vui', time:'143'},
-            {text:'Mà không đi trang trí tóc tai hay mặt mũi', time:'149'},
-            {text:'Còn ai trang trí cây thông chờ Giáng Sinh', time:'153'},
-            {text:'Mà không đi trang trí những ước mơ', time:'158'},
-            {text:'Trang trí những ước mơ của mình', time:'162'},
-            {text:'[...]', time:'128'},
+            {text:'Đưa xuống một li', time:'24',isPlayed:false},
+            {text:'Sang trái một tí', time:'26',isPlayed:false},
+            {text:'Căn những tròn vuông', time:'28',isPlayed:false},
+            {text:'Sao cho vừa ý', time:'31',isPlayed:false},
+            {text:'Hai bước về sau', time:'33',isPlayed:false},
+            {text:'Nheo mắt vào xem', time:'36',isPlayed:false},
+            {text:'Tối thêm màu trắng', time:'38',isPlayed:false},
+            {text:'Sáng thêm màu kem', time:'41',isPlayed:false},
+            {text:'Đó là em', time:'43'},
+            {text:'Và em lại trang trí căn nhà của chúng ta', time:'45',isPlayed:false},
+            {text:'Và em đi trang trí những xanh tươi cành lá', time:'50',isPlayed:false},
+            {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'54',isPlayed:false},
+            {text:'Và em đi trang trí những thói quen của mình', time:'59',isPlayed:false},
+            {text:'[Nhạc]', time:'63',isPlayed:false},
+            {text:'Quanh những bàn ghế', time:'82',isPlayed:false},
+            {text:'Em bắt đầu vẽ', time:'85',isPlayed:false},
+            {text:'Những trái tim nhỏ bé', time:'87',isPlayed:false},
+            {text:'Khiến chúng đẹp đẽ', time:'90',isPlayed:false},
+            {text:'Trang trí thật lâu', time:'92',isPlayed:false},
+            {text:'Buông xuống nghỉ ngơi', time:'95',isPlayed:false},
+            {text:'Tiếng đơn hàng tới đi cùng với đôi quần áo mới xinh', time:'97',isPlayed:false},
+            {text:'Và em lại trang trí căn nhà của chúng ta', time:'103',isPlayed:false},
+            {text:'Và em đi trang trí những xanh tươi cành lá', time:'108',isPlayed:false},
+            {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'113',isPlayed:false},
+            {text:'Và em đi trang trí những thói quen của mình', time:'118',isPlayed:false},
+            {text:'Và em lại trang trí', time:'123',isPlayed:false},
+            {text:'uh uh uh', time:'126',isPlayed:false},
+            {text:'Và em lại trang trí', time:'133',isPlayed:false},
+            {text:'uh uh uh', time:'135'},
+            {text:'Còn ai trang trí căn nhà để sống vui', time:'142',isPlayed:false},
+            {text:'Mà không đi trang trí tóc tai hay mặt mũi', time:'148',isPlayed:false},
+            {text:'Còn ai trang trí cây thông chờ Giáng Sinh', time:'152',isPlayed:false},
+            {text:'Mà không đi trang trí những ước mơ', time:'157',isPlayed:false},
+            {text:'Trang trí những ước mơ của mình', time:'161',isPlayed:false},
+            {text:'[...]', time:'164',isPlayed:false},
+          
           ],
           currentTime:0
       },
@@ -122,10 +146,11 @@ import { EventBus } from '@/EventBus';
     created(){
         EventBus.$on('time-update',(data)=>{
             this.nowPlaying.currentTime = data
-            console.log(this.nowPlaying.currentTime)
+        
      
         })
     },
+  
    
 }
 </script>
@@ -219,10 +244,10 @@ import { EventBus } from '@/EventBus';
    
 }
 .lyrics{
-    background-color: orange;
-    height: 600px;
+    background-color: green;
+
     border-radius: 10px;
-    overflow: auto;
+
     margin: 20px 0;
 }
 .lyrics p{
