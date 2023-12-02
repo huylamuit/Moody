@@ -17,7 +17,6 @@ export default {
   },
    mounted() {
     const currentUrl = window.location.href;
-    console.log(currentUrl);
     if(currentUrl == "http://localhost:8080/" || currentUrl == "http://localhost:8080"){
       document.getElementById("danh-gia").addEventListener("click",function(){
    document.getElementsByClassName("third-section")[0].scrollIntoView({behavior: 'smooth'});
