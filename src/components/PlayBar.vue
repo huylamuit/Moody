@@ -3,8 +3,8 @@
         <div class="song">
             <img class="song_img" :src="require('../assets/img/' + 'gieo.jpg')" alt="">
             <div class="song_info">
-                <p class="info"><strong>asd</strong></p>
-                <p class = "info">asd</p>
+                <p class="info"><strong>Em Trang Trí</strong></p>
+                <p class = "info">Ngọt</p>
             </div>
         </div>
         <div class="play_content">
@@ -158,11 +158,11 @@ import { EventBus } from '@/EventBus';
 }
 .song_info{
     display: block;
-    margin: 5px;
+    margin: -30px;
     text-align: left;
 }
 .info{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     margin-left: 10px;
     margin-top: 5px;
@@ -208,7 +208,7 @@ import { EventBus } from '@/EventBus';
 }
 
 .play_option{
-    width: 35%;
+    width: 30%;
 
 
 }

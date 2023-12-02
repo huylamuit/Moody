@@ -23,7 +23,7 @@
             </ul>
         </div>
         <div class="navbar__configure">
-            <DefaultButton>Dùng thử</DefaultButton>
+            <DefaultButton><a href="/music-app">Dùng thử</a></DefaultButton>
         </div>
     </div>
 </template>
@@ -92,6 +92,9 @@ ul{
     background-color: white;
     color:black;
     cursor: pointer;
+}
+.navbar__configure button a:hover{
+    color:black;
 }
 
 </style>
