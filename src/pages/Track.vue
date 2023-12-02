@@ -1,7 +1,6 @@
 <template>
     <div id="track">
         <SideBar>
-
         </SideBar>
         <div class="content">
             <div class="header">
@@ -35,10 +34,10 @@
             </div>
             <div class="suggest">
                 <h2 id="suggest_title">Nổi bật của Ngọt</h2>
-                <CardList></CardList>
+                <CardList :CardList="this.list"></CardList>
             </div>
         </div>
-        <PlayBar></PlayBar>
+        <PlayBar ></PlayBar>
     </div>
 </template>
 
@@ -65,7 +64,7 @@ import { EventBus } from '@/EventBus';
         
     },
     mounted(){
-        // Gọi hàm để xác định class
+
         setInterval(()=>{
             this.nowPlaying.lyrics.forEach(lyric=>{
 
@@ -79,7 +78,7 @@ import { EventBus } from '@/EventBus';
         },1000)
        
 
-        // Thêm class vào element sử dụng JavaScript
+
    
   },
   
@@ -132,7 +131,7 @@ import { EventBus } from '@/EventBus';
           ],
           currentTime:0
       },
-      recent:[
+      list:[
         {SongName: 'Đánh Đổi', Singer: 'Obito, MCK', img: 'danhdoi.jpg'},
         {SongName: 'Em Trang Trí', Singer: 'Ngọt', img: 'gieo.jpg'},
         {SongName: 'All I Want For Christmas Is You', Singer: 'Mariah Carey', img:'all i want for christmas is you.jpg' },
