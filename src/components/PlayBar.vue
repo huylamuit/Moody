@@ -1,10 +1,10 @@
 <template>
     <div id="play_bar">
         <div class="song">
-            <img class="song_img" :src="require('../assets/img/' + 'gieo.jpg')" alt="">
+            <img class="song_img" :src="require('../assets/img/' + this.info.img)" alt="">
             <div class="song_info">
-                <p class="info"><strong>Em Trang Trí</strong></p>
-                <p class = "info">Ngọt</p>
+                <p class="info"><strong>{{ this.info.SongName }}</strong></p>
+                <p class = "info">{{ this.info.Artist }}</p>
             </div>
         </div>
         <div class="play_content">
@@ -54,7 +54,8 @@ import { EventBus } from '@/EventBus';
                 isMute: false,
                 volume:60,
                 currentTime:0,
-                duration:208
+                duration:208,
+                info:{SongName:'Em Trang Trí', Artist:'Ngọt', img:'gieo.jpg'}
             }
         },
         methods: {
@@ -133,6 +134,12 @@ import { EventBus } from '@/EventBus';
                 audio.currentTime = data;
             });
             EventBus.$on('getEmitPlay',this.togglePlay)
+            EventBus.$on('SongCardPlay',(data)=>{
+                console.log('wiwiw')
+                this.info.img = data[2]
+                this.info.SongName = data[0]
+                this.info.Artist = data[1]
+            })
         },
     }
 
