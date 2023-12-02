@@ -68,8 +68,7 @@ import { EventBus } from '@/EventBus';
         // Gọi hàm để xác định class
         setInterval(()=>{
             this.nowPlaying.lyrics.forEach(lyric=>{
-                console.log('lyric', lyric.time)
-                console.log('currentTime',this.nowPlaying.currentTime)
+
                 if(lyric.time <= this.nowPlaying.currentTime){
                     lyric.isPlayed = true;
                 }
@@ -77,7 +76,7 @@ import { EventBus } from '@/EventBus';
                     lyric.isPlayed = false;
                 }
             })
-        },900)
+        },1000)
        
 
         // Thêm class vào element sử dụng JavaScript
@@ -102,7 +101,7 @@ import { EventBus } from '@/EventBus';
             {text:'Nheo mắt vào xem', time:'36',isPlayed:false},
             {text:'Tối thêm màu trắng', time:'38',isPlayed:false},
             {text:'Sáng thêm màu kem', time:'41',isPlayed:false},
-            {text:'Đó là em', time:'43'},
+            {text:'Đó là em', time:'43', isPlayed:false},
             {text:'Và em lại trang trí căn nhà của chúng ta', time:'45',isPlayed:false},
             {text:'Và em đi trang trí những xanh tươi cành lá', time:'50',isPlayed:false},
             {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'54',isPlayed:false},
@@ -264,6 +263,7 @@ import { EventBus } from '@/EventBus';
     border-radius: 10px;
     overflow: auto;
     margin: 20px 0;
+    padding: 20px;
 }
 .lyrics::-webkit-scrollbar {
     height: 80vh;
@@ -288,6 +288,7 @@ import { EventBus } from '@/EventBus';
 }
 .lyrics p:hover{
     font-size: 32px;
+    line-height: 1.2;
     cursor: pointer;
     color: white;
 }
@@ -295,6 +296,7 @@ import { EventBus } from '@/EventBus';
 .lyrics .target{
     font-size: 28px;
     cursor: pointer;
+    line-height: 1.2;
     color: white;
 }
 #suggest{

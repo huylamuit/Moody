@@ -69,6 +69,7 @@ import { EventBus } from '@/EventBus';
                     audio.play();
                 }
                 this.isPlay = !this.isPlay;
+                EventBus.$emit('playBarEmitPlay')
             },
             calculateProgress() {
                 return (this.currentTime / this.duration) * 100;
@@ -117,6 +118,7 @@ import { EventBus } from '@/EventBus';
                     
                 audio.currentTime = data;
             });
+            EventBus.$on('getEmitPlay',this.togglePlay)
         },
     }
 
