@@ -14,9 +14,9 @@
       <h2>Thư viện</h2>
    
       <div class="button">
-        <img src="../assets/img/ngot.jpg" alt="">
+        <img src="../assets/img/gieo.jpg" alt="">
         <div class="cate_info">
-          <p class="cate_name"><b><a href="">Bài hát đã thích</a></b></p>
+          <p class="cate_name"><b><a href="/music-app/section">Bài hát đã thích</a></b></p>
           <p class="song_num">3 bài</p>
 
         </div>

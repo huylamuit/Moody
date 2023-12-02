@@ -5,31 +5,32 @@
       </SideBar>
     
       <div class="content">
-      
-        <div class="slide">
-          <img src="https://i.pinimg.com/originals/ff/16/01/ff160152754a2732ccb91c8aa63b34cc.jpg" alt="" class="slide_img">
-          <div class="slide_description">
-            <h1>Hòa mình vào <br> không khí Giáng Sinh </h1>
-            <p class="description"> 
-              Chào mừng mùa Giáng Sinh ấm áp! 🎄✨ Đã đến lúc để hòa mình vào không khí tràn ngập hạnh phúc và niềm vui. 
-              Bật nhạc là một cách tuyệt vời để tận hưởng khoảnh khắc này, và chúng tôi đã chuẩn bị một playlist Giáng Sinh đặc biệt chỉ dành riêng cho bạn!
-            </p>
-          </div>
-        </div>
+        <ImgSlider></ImgSlider>
         <div class="list">
-          <h1>Mới Phát Gần Đây</h1>
+          <div class="list_title">
+              <h1>Mới Phát Gần Đây</h1>
+              <a href="/music-app/section" class="end">xem thêm</a>
+          </div>
           <div class="song_list">
+          
             <div  v-for="(song,index) in recent" :key="index">
               <SongCard :SongName="song.SongName" :Singer="song.Singer" :img="song.img" @play="play"/>
             </div>
           </div>
-          <h1>Đề Xuất Hôm Nay</h1>
+          <div class="list_title">
+              <h1>Đề xuất cho bạn</h1>
+              <a href="/music-app/section" class="end">xem thêm</a>
+          </div>
           <div class="song_list">
+          
             <div  v-for="(song,index) in recent" :key="index">
               <SongCard :SongName="song.SongName" :Singer="song.Singer" :img="song.img" @play="play"/>
             </div>
           </div>
-          <h1>Đang Thịnh Hành</h1>
+          <div class="list_title">
+              <h1>Top thịnh hành</h1>
+              <a href="/music-app/section" class="end">xem thêm</a>
+          </div>
           <div class="song_list">
             <div  v-for="(song,index) in recent" :key="index">
               <SongCard :SongName="song.SongName" :Singer="song.Singer" :img="song.img" @play="play"/>
@@ -49,7 +50,8 @@
   <script >
 
 
-  import SongCard from '../components/mocules/SongCard.vue';
+  import ImgSlider from '@/components/mocules/ImgSlider.vue';
+import SongCard from '../components/mocules/SongCard.vue';
   import PlayBar from '../components/PlayBar.vue';
   import SideBar from '../components/SideBar.vue'
 
@@ -57,10 +59,11 @@
   export default {
     name: 'App',
     components: {
-      SongCard,
-      PlayBar,
-      SideBar,
-    },
+    SongCard,
+    PlayBar,
+    SideBar,
+    ImgSlider
+},
     data(){
       return {
         nowPlaying:{
@@ -125,58 +128,26 @@
     padding: 0 0 30px 0;
     overflow-x:clip;
   }
-  .slide{
-    position: relative;
-    width: 97%;
-    height: 500px;
-    color: white;
-    margin:20px;
-    border-radius: 10px ;
-    overflow: hidden;
-  
-  }
-  .slide_img{
-    width: 100%;
-    height: 100%;
-  }
-  .slide_description{
-    color: white;
-    position: absolute;
 
-    bottom: 0px;
-    text-align: left;
-    padding: 20px;
-
-  }
-  .description{
-    display: none;
-    width: 60%;
-    font-size: 18px;
-
-  }
-  .slide:hover .description{
-    display: block;
-
-  }
-  .slide:hover .slide_description{
-    background-color: rgba(117, 117, 117, 0.7);
-    height: 100%;
-    cursor: pointer;
-    
-    
-
-  }
   .list{
     margin: 20px;
     text-align: left;
     color: white;
   }
+  .list_title{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    padding: 0 20px;
+
+}
+
   .song_list{
     display: flex;
     justify-content:space-between ;
     flex-direction: row;
     flex-flow: wrap;
-    margin: 30px 0;
+    margin: 10px 0;
   }
   h1{
     margin: 40px 0 20px 0;
