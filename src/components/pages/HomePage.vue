@@ -111,11 +111,7 @@
                   <div class="prop">
                     <p class="prop-header">App xin vai</p>
                     <p class="prop-content">
-                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-                      lobortis.
+                      Ứng dụng nghe nhạc đa dạng, tích hợp chức năng xuất sắc, đem đến trải nghiệm nghe nhạc đẳng cấp.
                     </p>
                   </div>
                   <div class="profile">
@@ -170,11 +166,7 @@
                   <div class="prop">
                     <p class="prop-header">App xin vai</p>
                     <p class="prop-content">
-                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-                      lobortis.
+                      Ứng dụng nghe nhạc - Khám phá thế giới âm nhạc đa dạng, trải nghiệm tuyệt vời với chất lượng âm thanh cao cấp và tính năng độc đáo.
                     </p>
                   </div>
                   <div class="profile">
@@ -185,7 +177,7 @@
                     </div>
                     <div class="profile-info">
                       <p class="profile-name">Sarah Aley</p>
-                      <p class="profile-company">Employee</p>
+                      <p class="profile-company">Nhân viên</p>
 
                     </div>
                   </div>
@@ -228,13 +220,9 @@
                     </div>
                   </div>
                   <div class="prop">
-                    <p class="prop-header">App xin vai</p>
+                    <p class="prop-header">Giao diện đẹp</p>
                     <p class="prop-content">
-                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-                      lobortis.
+                      Thiết kế đẹp, thu hút người dùng. Thích nhất tính năng lyrics.
                     </p>
                   </div>
                   <div class="profile">
@@ -287,13 +275,9 @@
                     </div>
                   </div>
                   <div class="prop">
-                    <p class="prop-header">App xin vai</p>
+                    <p class="prop-header">Tuyệt vời</p>
                     <p class="prop-content">
-                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-                      lobortis.
+                      Với ứng dụng này, tôi không chỉ nghe nhạc, mà còn khám phá và mở rộng sự hiểu biết của mình về thế giới đa dạng của âm nhạc từ mọi thể loại.
                     </p>
                   </div>
                   <div class="profile">
@@ -304,7 +288,7 @@
                     </div>
                     <div class="profile-info">
                       <p class="profile-name">Duy</p>
-                      <p class="profile-company">Google</p>
+                      <p class="profile-company">Youtuber</p>
 
                     </div>
                   </div>
@@ -346,13 +330,9 @@
                     </div>
                   </div>
                   <div class="prop">
-                    <p class="prop-header">App xin vai</p>
+                    <p class="prop-header">App xịn xò</p>
                     <p class="prop-content">
-                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-                      lobortis.
+                      Không chỉ đẹp mắt về giao diện, ứng dụng này còn chinh phục tôi bằng chất lượng âm thanh xuất sắc, tạo nên trải nghiệm nghe nhạc chân thực và cuốn hút
                     </p>
                   </div>
                   <div class="profile">
@@ -405,9 +385,9 @@
                     </div>
                   </div>
                   <div class="prop">
-                    <p class="prop-header">App xin vai</p>
+                    <p class="prop-header">Trải nghiệm tuyệt vời</p>
                     <p class="prop-content">
-                      
+                      Tôi đã trải nghiệm ứng dụng nghe nhạc và không ngừng kinh ngạc với sự đa dạng và chất lượng âm nhạc. Giao diện dễ sử dụng, mang đến cho tôi cuộc phiêu lưu âm nhạc tuyệt vời
                     </p>
                   </div>
                   <div class="profile">
@@ -417,8 +397,8 @@
                       style="width: 55px; height: 55px; border-radius: 50%">
                     </div>
                     <div class="profile-info">
-                      <p class="profile-name">Duy</p>
-                      <p class="profile-company">Google</p>
+                      <p class="profile-name">Nguyễn Cường</p>
+                      <p class="profile-company">Giáo viên</p>
 
                     </div>
                   </div>
@@ -1388,11 +1368,11 @@ width: 400px;
       }
       .review-card .prop .prop-content{
         text-align: justify;
-        letter-spacing: 1px;
+        letter-spacing: 0.2px;
         height: 150px;
         overflow: hidden;
         margin : 15px 0;
-        font-size: 15px;
+        font-size: 18px;
       }
       .star-rating{
         justify-items: flex-end;
