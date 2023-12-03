@@ -4,6 +4,7 @@ import Track from './pages/Track.vue'
 import MusicApp from './pages/MusicApp.vue'
 import Artist from './pages/Artist.vue'
 import Search from './pages/SearchPage.vue'
+import Section from './pages/section.vue'
 
 import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
@@ -59,7 +60,8 @@ const routes = {
   '/music-app':MusicApp,
   '/music-app/track': Track,
   '/music-app/artist': Artist,
-  '/music-app/search': Search
+  '/music-app/search': Search,
+  '/music-app/section': Section
 }
 new Vue({
   el: '#app',

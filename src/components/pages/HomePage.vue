@@ -120,13 +120,13 @@
                   </div>
                   <div class="profile">
                     <div class="profile-image">
-                      <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+                      <img src="../../assets/spt-ceo.webp"
                       alt="Profile Image"
-                      style="width: 55px; height: 55px; border-radius: 50%">
+                      style="width: 55px; height: 55px; border-radius: 50%;object-fit: cover">
                     </div>
                     <div class="profile-info">
-                      <p class="profile-name">Duy</p>
-                      <p class="profile-company">Google</p>
+                      <p class="profile-name">Daniel Ek</p>
+                      <p class="profile-company">Spotify</p>
 
                     </div>
                   </div>
@@ -179,13 +179,13 @@
                   </div>
                   <div class="profile">
                     <div class="profile-image">
-                      <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+                      <img src="../../assets/girlsmile.jpg"
                       alt="Profile Image"
-                      style="width: 55px; height: 55px; border-radius: 50%">
+                      style="width: 55px; height: 55px; border-radius: 50%;object-fit:cover">
                     </div>
                     <div class="profile-info">
-                      <p class="profile-name">Duy</p>
-                      <p class="profile-company">Google</p>
+                      <p class="profile-name">Sarah Aley</p>
+                      <p class="profile-company">Employee</p>
 
                     </div>
                   </div>
@@ -239,9 +239,68 @@
                   </div>
                   <div class="profile">
                     <div class="profile-image">
-                      <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+                      <img src="../../assets/girlsmile2.jpg"
                       alt="Profile Image"
-                      style="width: 55px; height: 55px; border-radius: 50%">
+                      style="width: 55px; height: 55px; border-radius: 50%;object-fit:cover">
+                    </div>
+                    <div class="profile-info">
+                      <p class="profile-name">Duy</p>
+                      <p class="profile-company">Nhân viên</p>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="review-card">
+                  <div class="flex-profile">
+                    <div class="heading-image">
+                      <div class="heading">
+                        <svg width="57" height="47" viewBox="0 0 57 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_1110_5524)">
+                          <path d="M54.6444 5.02917C59.2182 10.5177 56.6772 21.266 50.9177 30.4134C45.0735 39.5609 35.926 47.0314 26.8632 47.0314C17.8004 46.9552 8.90701 39.3322 4.07917 30.7184C-0.748673 22.1045 -1.51097 12.4234 2.97808 7.01112C7.46713 1.59886 17.1228 0.379193 27.7949 -0.0781813C38.3822 -0.611785 50.0707 -0.459326 54.6444 5.02917Z" fill="url(#paint0_linear_1110_5524)"/>
+                          <g clip-path="url(#clip1_1110_5524)">
+                          <path d="M16 20.7129C16 17.2166 18.8768 14.3848 22.4286 14.3848H22.8571C23.8054 14.3848 24.5714 15.1389 24.5714 16.0723C24.5714 17.0057 23.8054 17.7598 22.8571 17.7598H22.4286C20.7732 17.7598 19.4286 19.0834 19.4286 20.7129V21.1348H22.8571C24.7482 21.1348 26.2857 22.6482 26.2857 24.5098V27.8848C26.2857 29.7463 24.7482 31.2598 22.8571 31.2598H19.4286C17.5375 31.2598 16 29.7463 16 27.8848V26.1973V24.5098V20.7129ZM29.7143 20.7129C29.7143 17.2166 32.5911 14.3848 36.1429 14.3848H36.5714C37.5196 14.3848 38.2857 15.1389 38.2857 16.0723C38.2857 17.0057 37.5196 17.7598 36.5714 17.7598H36.1429C34.4875 17.7598 33.1429 19.0834 33.1429 20.7129V21.1348H36.5714C38.4625 21.1348 40 22.6482 40 24.5098V27.8848C40 29.7463 38.4625 31.2598 36.5714 31.2598H33.1429C31.2518 31.2598 29.7143 29.7463 29.7143 27.8848V26.1973V24.5098V20.7129Z" fill="#FEEFFF"/>
+                          </g>
+                          </g>
+                          <defs>
+                          <linearGradient id="paint0_linear_1110_5524" x1="4.20194e-07" y1="-6.93432e-07" x2="73.0222" y2="42.8192" gradientUnits="userSpaceOnUse">
+                          <stop stop-color="#00A0F9"/>
+                          <stop offset="1" stop-color="#89778B"/>
+                          </linearGradient>
+                          <clipPath id="clip0_1110_5524">
+                          <rect width="57" height="47" fill="white"/>
+                          </clipPath>
+                          <clipPath id="clip1_1110_5524">
+                          <rect width="24" height="27" fill="white" transform="translate(16 4)"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                          
+                          
+                          
+                      </div>
+                    </div>
+                    <div class="star-rating">
+                      <h2 style="color: rgb(232, 232, 3);">4.7
+                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(232, 232, 3)">
+                          <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="prop">
+                    <p class="prop-header">App xin vai</p>
+                    <p class="prop-content">
+                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
+                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
+                      lobortis.
+                    </p>
+                  </div>
+                  <div class="profile">
+                    <div class="profile-image">
+                      <img src="../../assets/mansmile.jpg"
+                      alt="Profile Image"
+                      style="width: 55px; height: 55px; border-radius: 50%;object-fit:cover">
                     </div>
                     <div class="profile-info">
                       <p class="profile-name">Duy</p>
@@ -298,68 +357,9 @@
                   </div>
                   <div class="profile">
                     <div class="profile-image">
-                      <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+                      <img src="../../assets/mansmile2.jpg"
                       alt="Profile Image"
-                      style="width: 55px; height: 55px; border-radius: 50%">
-                    </div>
-                    <div class="profile-info">
-                      <p class="profile-name">Duy</p>
-                      <p class="profile-company">Google</p>
-
-                    </div>
-                  </div>
-                </div>
-                <div class="review-card">
-                  <div class="flex-profile">
-                    <div class="heading-image">
-                      <div class="heading">
-                        <svg width="57" height="47" viewBox="0 0 57 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_1110_5524)">
-                          <path d="M54.6444 5.02917C59.2182 10.5177 56.6772 21.266 50.9177 30.4134C45.0735 39.5609 35.926 47.0314 26.8632 47.0314C17.8004 46.9552 8.90701 39.3322 4.07917 30.7184C-0.748673 22.1045 -1.51097 12.4234 2.97808 7.01112C7.46713 1.59886 17.1228 0.379193 27.7949 -0.0781813C38.3822 -0.611785 50.0707 -0.459326 54.6444 5.02917Z" fill="url(#paint0_linear_1110_5524)"/>
-                          <g clip-path="url(#clip1_1110_5524)">
-                          <path d="M16 20.7129C16 17.2166 18.8768 14.3848 22.4286 14.3848H22.8571C23.8054 14.3848 24.5714 15.1389 24.5714 16.0723C24.5714 17.0057 23.8054 17.7598 22.8571 17.7598H22.4286C20.7732 17.7598 19.4286 19.0834 19.4286 20.7129V21.1348H22.8571C24.7482 21.1348 26.2857 22.6482 26.2857 24.5098V27.8848C26.2857 29.7463 24.7482 31.2598 22.8571 31.2598H19.4286C17.5375 31.2598 16 29.7463 16 27.8848V26.1973V24.5098V20.7129ZM29.7143 20.7129C29.7143 17.2166 32.5911 14.3848 36.1429 14.3848H36.5714C37.5196 14.3848 38.2857 15.1389 38.2857 16.0723C38.2857 17.0057 37.5196 17.7598 36.5714 17.7598H36.1429C34.4875 17.7598 33.1429 19.0834 33.1429 20.7129V21.1348H36.5714C38.4625 21.1348 40 22.6482 40 24.5098V27.8848C40 29.7463 38.4625 31.2598 36.5714 31.2598H33.1429C31.2518 31.2598 29.7143 29.7463 29.7143 27.8848V26.1973V24.5098V20.7129Z" fill="#FEEFFF"/>
-                          </g>
-                          </g>
-                          <defs>
-                          <linearGradient id="paint0_linear_1110_5524" x1="4.20194e-07" y1="-6.93432e-07" x2="73.0222" y2="42.8192" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#00A0F9"/>
-                          <stop offset="1" stop-color="#89778B"/>
-                          </linearGradient>
-                          <clipPath id="clip0_1110_5524">
-                          <rect width="57" height="47" fill="white"/>
-                          </clipPath>
-                          <clipPath id="clip1_1110_5524">
-                          <rect width="24" height="27" fill="white" transform="translate(16 4)"/>
-                          </clipPath>
-                          </defs>
-                          </svg>
-                          
-                          
-                          
-                      </div>
-                    </div>
-                    <div class="star-rating">
-                      <h2 style="color: rgb(232, 232, 3);">4.7
-                          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(232, 232, 3)">
-                          <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-                      </h2>
-                    </div>
-                  </div>
-                  <div class="prop">
-                    <p class="prop-header">App xin vai</p>
-                    <p class="prop-content">
-                      Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                      vulputate libero et velit interdum, ac aliquet odio mattis. Class
-                      aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                      inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-                      lobortis.
-                    </p>
-                  </div>
-                  <div class="profile">
-                    <div class="profile-image">
-                      <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
-                      alt="Profile Image"
-                      style="width: 55px; height: 55px; border-radius: 50%">
+                      style="width: 55px; height: 55px; border-radius: 50%;object-fit:cover">
                     </div>
                     <div class="profile-info">
                       <p class="profile-name">Duy</p>
@@ -462,7 +462,7 @@
                 <p>Chính sách và điều khoản</p>
               </div>
             </div>
-            <div class="pricing-option reveal">
+            <div class="pricing-option ">
               <div class="payment">
                 <p class="payment-duration-2">3 tháng với giá 59,000đ</p>
                 <p class="payment-duration">Thanh toán một lần</p>
@@ -486,7 +486,7 @@
                 <p>Chính sách và điều khoản</p>
               </div>
             </div>
-            <div class="pricing-option reveal">
+            <div class="pricing-option">
               <div class="payment">
                 <p class="payment-duration-2">
                 Miễn phí 1 tháng khi đăng ký
