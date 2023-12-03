@@ -1,23 +1,27 @@
 <template>
     <div id="SearchBar">
-        <input type="text" name="" id="" placeholder="Bạn muốn nghe gì?">
+        <input @input="emitSearch" v-model="keyword" type="text" name="" id="" placeholder="Bạn muốn nghe gì?">
     </div>
 </template>
 
 <script>
 
-import SideBar from '../SideBar.vue'
-
+import { EventBus } from '@/EventBus';
     export default {
         name: 'SearchBar',
-        comments: {
-            SideBar,
+        components: {
+      
         },
         data(){
             return{
-           
+                keyword:''
             }
         },
+        methods:{
+            emitSearch(){
+                EventBus.$emit('search',this.keyword)
+            }
+        }
     
     }
 </script>
