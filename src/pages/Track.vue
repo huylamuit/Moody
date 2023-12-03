@@ -102,7 +102,7 @@ import { EventBus } from '@/EventBus';
             {text:'Nheo mắt vào xem', time:'36',isPlayed:false},
             {text:'Tối thêm màu trắng', time:'38',isPlayed:false},
             {text:'Sáng thêm màu kem', time:'41',isPlayed:false},
-            {text:'Đó là em', time:'43'},
+            {text:'Đó là em', time:'42',isPlayed:false},
             {text:'Và em lại trang trí căn nhà của chúng ta', time:'45',isPlayed:false},
             {text:'Và em đi trang trí những xanh tươi cành lá', time:'50',isPlayed:false},
             {text:'Và em lại trang trí cây thông chờ Giáng Sinh', time:'54',isPlayed:false},
