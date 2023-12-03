@@ -35,7 +35,7 @@
             </div>
             <div class="suggest">
                 <h2 id="suggest_title">Nổi bật của Ngọt</h2>
-                <CardList></CardList>
+                <CardList :CardList="this.recent"></CardList>
             </div>
         </div>
         <PlayBar></PlayBar>
@@ -56,6 +56,7 @@ import { EventBus } from '@/EventBus';
     name: 'TrackPage',
    
     components: { SideBar, PlayBar,SongList, CardList, SongOption},
+   
     methods:{
         emitTime(time){
             this.nowPlaying.currentTime = time
